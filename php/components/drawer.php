@@ -56,60 +56,61 @@ function drawer($domainDirectory, $navButton)
     <!-- Drawer for the site -->
     <div class='nav_container'>
     <nav>
-    <div class=\"nav_box\">
+    <ul>
+    <li class=\"nav_box $personalTab\">
         <a class=" . $personalTab . " href=" . $domainDirectory . "personal_info.php> Personal Information
         </a>
-    </div>
-    <div class=\"nav_box\">
+    </li>
+    <li class=\"nav_box $educationTab\">
     <a class=" . $educationTab . " href=" . $domainDirectory . "education.php>
         Education
         </a>
-    </div>
-    <div class=\"nav_box\">
+    </li>
+    <li class=\"nav_box $academicTab\">
     <a class=" . $academicTab . " href=" . $domainDirectory . "academic_qualification.php>
         Academic Qualifications
     </a>
-    </div>
-    <div class=\"nav_box\">
+    </li>
+    <li class=\"nav_box $scholarshipTab\">
     <a class=" . $scholarshipTab . " href=" . $domainDirectory . "scholarships.php>
         Scholarships and Prizes
     </a>
-    </div>
-    <div class=\"nav_box\">
+    </li>
+    <li class=\"nav_box $honorsTab\">
     <a class=" . $honorsTab . " href=" . $domainDirectory . "honors.php>
         Honors Distinctions and membership
         </a>
-    </div>
-    <div class=\"nav_box\">
+    </li>
+    <li class=\"nav_box $teachingTab\">
     <a class=" . $teachingTab . " href=" . $domainDirectory . "teaching.php>
         Teaching / Work Experience
         </a>
-    </div>
-    <div class=\"nav_box\">
+    </li>
+    <li class=\"nav_box $publicationsTab\">
     <a class=" . $publicationsTab . " href=" . $domainDirectory . "publications.php>
          Publications
          </a>
-    </div>
-    <div class=\"nav_box\">
+    </li>
+    <li class=\"nav_box $researchTab\">
     <a class=" . $researchTab . " href=" . $domainDirectory . "research.php>
         Research
         </a>
-    </div>
-    <div class=\"nav_box\">
+    </li>
+    <li class=\"nav_box $editTab\">
     <a class=" . $editTab . " href=" . $domainDirectory . "edit_info.php>
         Edit information
         </a>
-    </div>
-    <div class=\"nav_box\">
+    </li>
+    <li class=\"nav_box $printTab\">
     <a class=" . $printTab . " href=" . $domainDirectory . "print_preview.php>
         Print preview
         </a>
-    </div>
-    <div class=\"nav_box\">
+    </li>
+    <li class=\"nav_box\">
     <a class=" . $logoutTab . " href=" . $domainDirectory . "logout.php>
         Logout 
         </a>   
-    </div>
+    </li>
 </nav>
 </div>
     ";
