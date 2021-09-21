@@ -9,7 +9,7 @@
 <div id="root">
     <!-- this is the drawer for the apcv maker site -->
     <?php
-    include_once "components/drawer.php";
+    include_once "../components/drawer.php";
     echo drawer($domain, "publications");
     ?>
     <?php
