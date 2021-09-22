@@ -36,5 +36,6 @@
 
     </div>
 </div>
+<script rel="script" src="../js/drawer.js"></script>
 </body>
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>apcv_maker</title>
     <link rel="stylesheet" href="../../css/style.css">
+
 </head>
 <body>
 <div id="root">
@@ -27,6 +28,8 @@
         */
         ?>
     </div>
+
 </div>
+<script rel="script" src="../../js/drawer.js"></script>
 </body>
 </html>

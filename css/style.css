@@ -17,10 +17,11 @@
 }
 ::-webkit-scrollbar-thumb{
     border-radius: 5px;
-    background-color: #C82D35;
-}
-::-webkit-scrollbar-thumb:hover{
     background-color: #ff9ea2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #C82D35;
 }
 
 
@@ -30,13 +31,16 @@
     box-sizing: border-box;
     font-family: "roboto", serif;
     text-decoration: none;
+    list-style: none;
+
 }
 
-ul{
+nav > ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
+
 .nav_container{
     height: 100vh;
     min-width: 250px;
@@ -60,6 +64,7 @@ ul{
     border-left: solid #A12B33 6px;
 }
 
+
 .nav_box .active{
     color: #A12B33;
 }
@@ -68,21 +73,28 @@ ul{
     padding-left: 6px;
 }
 .nav_box{
-    min-width: 220px;
-    max-height: 55px;
+    /*min-width: 163px;*/
+    /*max-width: 163px;*/
+    /*height: 20px;*/
+    min-height: 15px;
     margin-bottom: 8px;
     margin-top: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px;
-    padding-left: 49px;
+    padding: 10px 10px 10px 49px;
 }
+
 .nav_box:hover {
     background-color: rgba(255, 242, 254, 0.52);
     transition: background 200ms ease-in;
 }
 
+.nav_box ul .nav_box {
+    font-size: 12px;
+    max-width: 175px;
+    padding-left: 20px;
+}
 
 
 #form-container{
