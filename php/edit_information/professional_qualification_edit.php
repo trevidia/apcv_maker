@@ -27,6 +27,8 @@
         */
         ?>
     </div>
+    <h1>Professional Qualification and Diploma</h1></br>
+    
 </div>
 <script rel="script" src="../../js/drawer.js"></script>
 </body>
