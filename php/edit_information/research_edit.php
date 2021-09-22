@@ -29,7 +29,7 @@
         <div class="form-container">
             <!--This is the content in the edit_research info-->
             <div class="edit_research">
-        <h1 style="font-size: 30px; font-weight: 700; line-height: 35.16px;">Research</h1>
+        <h1 style="font-size: 30px; font-weight: 700; line-height: 35.16px; padding-bottom: 10px;">Research</h1>
 </div>
 
 <div>
@@ -65,6 +65,7 @@
 <!--end of research in progress-->
 
 <!--Liver cell details-->
+<div>
 <p style="padding-top: 20px; font-weight: 400; font-size: 15px;">Liver Cell Growth Details</p>
 <div style="font-size: 15px; width: 400px; float: left; padding-right: 41.81px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised  to make a type. It has survived not only  to make a type. It has survived not only in Ipsum in Ipsum.</div>
 <div style="padding-top: 50px;">
@@ -74,7 +75,7 @@
     <path d="M14.06 9.02l.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
 </svg></a>
 <div><a href="#" style="color: #d8a4b1; text-decoration: none;">Edit</a></div><br/><br/>
-<br/>
+<br/></div>
 <!--end of liver cell details-->
 
 
