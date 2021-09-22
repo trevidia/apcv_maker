@@ -47,7 +47,7 @@ ul{
     overflow-x: hidden;
     overflow-wrap: break-word;
     box-shadow: 6px 0 6px rgba(0, 0, 0, 0.16);
-    z-index: 1;
+    z-index: 10;
 }
 
 
@@ -91,7 +91,7 @@ ul{
     height: 100vh;
     /*padding-left: 150px;*/
     padding-top: 36px;
-    z-index: -1;
+    z-index: 0;
 }
 
 #root{

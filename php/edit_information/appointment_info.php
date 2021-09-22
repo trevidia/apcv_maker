@@ -26,6 +26,14 @@
         *  thank you
         */
         ?>
+        <h1>Appointment Info</h1>
+        <div style="margin-top:15px">
+            <p>First Academic Appointment: </p><br/>
+            <p>Date of First Academic Appointment: </p><br/>
+            <p>Present Appointment: </p><br/>
+            <p>Date of Present Academic Appointment: </p><br/>
+            <p>Date of Last Promotion: </p><br/>
+        </div>
     </div>
 </div>
 </body>

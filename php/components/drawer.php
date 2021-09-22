@@ -1,7 +1,7 @@
 <?php
 
 // make sure to change this value when running this on your server
-$domain = "http://localhost/apcv_maker/php/";
+$domain = "http://localhost/apcv_maker-1/php/";
 /*
  * This is a function that returns the drawer and checks if
  * the current file is the active file by supplying the $navButton
