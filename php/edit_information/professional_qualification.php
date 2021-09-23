@@ -29,9 +29,10 @@
         *  thank you
         */
         ?>
-    <h1> Professional Qualifications and Diplomas </h1> 
-    <br/>
-    <form action="">
+
+        <form action="">
+            <h1> Professional Qualifications and Diplomas </h1>
+            <br/>
     <div class="row mb-4"> Qualifications:
         <br/>
         <div class="col-23">

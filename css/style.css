@@ -84,9 +84,6 @@ nav > ul {
     min-height: 15px;
     margin-bottom: 1px;
     margin-top: 1px;
-    min-height: 15px;
-    margin-bottom: 8px;
-    margin-top: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -102,6 +99,11 @@ nav > ul {
     font-size: 12px;
     max-width: 175px;
     padding-left: 20px;
+}
+
+#publication {
+    color: #212529;
+    overflow: hidden;
 }
 
 

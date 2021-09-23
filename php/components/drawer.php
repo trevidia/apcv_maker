@@ -10,6 +10,9 @@ $imgDirectory = "http://localhost/apcv_maker";
  */
 function drawer($domainDirectory, $navButton)
 {
+    ob_start();
+    require_once 'publication_nav.php';
+    $pubDrawer = ob_get_clean();
     $personalTab = "non_active";
     $educationTab = "non_active";
     $academicTab = "non_active";
@@ -92,87 +95,10 @@ function drawer($domainDirectory, $navButton)
         </a>
     </li>
     <li class=\"nav_box $publicationsTab \"  id='publication'>
-    <a class=" . $publicationsTab . " href=" . $domainDirectory . "publications.php>
+    <a class=" . $publicationsTab . " href=" . $domainDirectory . "publications/articles_accepted_publication.php>
          Publications
          </a>
-          <ul id='pub_drawer'>
-    
-    <li>
-    <a class='nav_box sub_nav '>
-    Articles already accepted for publications
-</a>
-</li>
-<li>
-    <a class='nav_box sub_nav'>
-    Articles that have already appeared in Learned Journals
-</a>
-</li>
-<li>
-    <a class='nav_box sub_nav'>
-    Books already Published
-</a>
-</li>
-<li>
-    <a class='nav_box sub_nav'>
-    Books already accepted for publication
-</a>
-</li>
-<li>
-    <a class='nav_box sub_nav'>
-    Chapters in Books already accepted for publication
-</a>
-</li>
-<li>
-    <a class='nav_box sub_nav'>
-    Chapters in Books already Published
-</a>
-</li>
-<li>
-    <a class='nav_box sub_nav'>
-    Revised Chapters in Books
-</a>
-</li>
-<li>
-    <a class='nav_box sub_nav'>
-    Editorial Work
-</a>
-</li>
-<li>
-    <a class='nav_box sub_nav'>
-    Articles that have already appeared in Refereed Conference Proceedings
-</a>
-</li>
-<li>
-    <a class='nav_box sub_nav'>
-    Conference Attended
-</a>
-</li>
-<li>
-    <a class='nav_box sub_nav'>
-    Monographs
-</a>
-</li>
-<li>
-    <a class='nav_box sub_nav'>
-    Technical Reports
-</a>
-</li>
-<li>
-    <a class='nav_box sub_nav'>
-    Ten Best Publications 
-</a>
-</li>
-<li>
-    <a class='nav_box sub_nav'>
-    Patents
-</a>
-</li>
-<li>
-    <a class='nav_box sub_nav'>
-    Research Focus
-</a>
-</li>
-</ul>
+          " . $pubDrawer . "
     </li>
    
     <li class=\"nav_box $researchTab\">
@@ -181,7 +107,7 @@ function drawer($domainDirectory, $navButton)
         </a>
     </li>
     <li class=\"nav_box $editTab\">
-    <a class=" . $editTab . " href=" . $domainDirectory . "edit_info.php>
+    <a class=" . $editTab . " href=" . $domainDirectory . "edit_information/basic_info.php>
         Edit information
         </a>
     </li>
