@@ -32,7 +32,6 @@
     font-family: "roboto", serif;
     text-decoration: none;
     list-style: none;
-
 }
 
 nav {
@@ -81,9 +80,13 @@ nav > ul {
     padding-left: 6px;
 }
 .nav_box{
+
     min-height: 15px;
     margin-bottom: 1px;
     margin-top: 1px;
+    min-height: 15px;
+    margin-bottom: 8px;
+    margin-top: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;

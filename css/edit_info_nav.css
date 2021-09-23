@@ -1,0 +1,22 @@
+#edit_nav_container {
+    border: solid #D49BA9 1px;
+    border-radius: 5px;
+    margin-right: 50px;
+    height: 607px;
+    width: 219px;
+}
+
+#edit_nav_container ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 607px;
+}
+
+#edit_nav_container ul li {
+    height: 59px;
+    display: flex;
+    align-items: center;
+    border-top: solid #D49BA9 1px;
+    padding-left: 22px;
+}
