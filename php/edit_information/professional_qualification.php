@@ -74,7 +74,7 @@
   <br/>
   <div class="row mb-4"> Granting Body:
         <br/>
-        <label class="visually-hidden" for="Granting Body"></label><br/>
+        <label class="visually-hidden" for="Granting Body"></label>
     <select class="select" style=" width : 300px; "> id="Granting Body"
     <option value="1">National Postgraduate College Of Physicians</option>
       <option value="2">Two</option>
@@ -95,6 +95,5 @@
     <right>CANCEL</button>
     </div>
 </div>
-<script rel="script" src="../../js/drawer.js"></script>
 </body>
 </html>
