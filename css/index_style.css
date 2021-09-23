@@ -25,7 +25,8 @@ header,
 
 .navbar {
     box-shadow: none !important;
-    background: rgb(28, 15, 77) !important;
+    background-color: #D49BA9 !important;
+    /*background: rgb(28, 15, 77) !important;*/
     padding: 20px;
 }
 
@@ -36,13 +37,15 @@ header,
 
 
 .top-nav-collapse {
-    background-color: rgb(28, 15, 77) !important;
+    background-color: #D49BA9 !important;
+    /*background-color: rgb(28, 15, 77) !important;*/
 }
 
 
 @media (max-width: 991px) {
     .navbar:not(.top-nav-collapse) {
-        background: rgb(28, 15, 77) !important;
+        background-color: #D49BA9 !important;
+        /*background: rgb(28, 15, 77) !important;*/
     }
 }
 

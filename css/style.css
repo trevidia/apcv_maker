@@ -32,7 +32,13 @@
     font-family: "roboto", serif;
     text-decoration: none;
     list-style: none;
+}
 
+nav {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    align-items: center;
 }
 
 nav > ul {
@@ -52,6 +58,7 @@ nav > ul {
     overflow-wrap: break-word;
     box-shadow: 6px 0 6px rgba(0, 0, 0, 0.16);
     z-index: 10;
+    padding-bottom: 30px;
 }
 
 
@@ -73,9 +80,10 @@ nav > ul {
     padding-left: 6px;
 }
 .nav_box{
-    /*min-width: 163px;*/
-    /*max-width: 163px;*/
-    /*height: 20px;*/
+
+    min-height: 15px;
+    margin-bottom: 1px;
+    margin-top: 1px;
     min-height: 15px;
     margin-bottom: 8px;
     margin-top: 8px;
