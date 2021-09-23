@@ -2,6 +2,7 @@
 
 // make sure to change this value when running this on your server
 $domain = "http://localhost/apcv_maker/php/";
+$imgDirectory = "http://localhost/apcv_maker";
 /*
  * This is a function that returns the drawer and checks if
  * the current file is the active file by supplying the $navButton
@@ -56,7 +57,11 @@ function drawer($domainDirectory, $navButton)
     <!-- Drawer for the site -->
     <div class='nav_container'>
     <nav>
+    <!-- Todo change the src to the correct domain once done with development -->
+    <img style='width: 100px; padding-top: 20px; margin-bottom: 36px' src='http://localhost/apcv_maker/static/img/College_logo.jpg' alt='college_logo'>
+   
     <ul>
+   
     <li class=\"nav_box $personalTab\">
         <a class=" . $personalTab . " href=" . $domainDirectory . "personal_info.php> Personal Information
         </a>
