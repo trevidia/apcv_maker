@@ -27,7 +27,10 @@
         *  thank you
         */
        ?>
-           <form action="" id="form-container">
+           <form action="" id="form-container" style="width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    line-height: 40px">
             <div style>
             <div>
                 <h1>Education info</h1>
@@ -35,15 +38,15 @@
             <br>
             <div>
     
-                <label for="institution" style="padding: 20px">Institution</label>
+                <label for="institution">Institution</label>
 <br>
-                <select name="institution" id="institution-label" style="box-sizing:border-box;">
+                <select name="institution" id="institution-label" style="box-sizing:border-box; width:40%">
                     <option value="text">University of Ibadan</option>
                 </select>
         
     
             </div>
-            <div class="education" style="width: max-content; padding: 20px; border-radius: 5px">
+            <div class="education" style="width: max-content; border-radius: 5px">
                 <label for="year">From:</label>
                 <select name="year" id="" required style="border-radius: 5px">
                         <option value="text">2005</option>
@@ -105,7 +108,7 @@
                 </div>
             
             
-                <BUtton class="btn" style="background: black; color:white; width: 40%; padding: 10px; border-radius: 5px" >SAVE CHANGES</BUtton>
+                <BUtton class="btn" style="background: black; color:white; width: 40%; padding: 3px; border-radius: 5px" >SAVE CHANGES</BUtton>
             </div>
         </form>
     </div>
