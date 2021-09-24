@@ -13,6 +13,9 @@ function drawer($domainDirectory, $navButton)
     ob_start();
     require_once 'publication_nav.php';
     $pubDrawer = ob_get_clean();
+    ob_start();
+    require_once 'research_nav.php';
+    $researchNav = ob_get_clean();
     $personalTab = "non_active";
     $educationTab = "non_active";
     $academicTab = "non_active";
@@ -105,6 +108,7 @@ function drawer($domainDirectory, $navButton)
     <a class=" . $researchTab . " href=" . $domainDirectory . "research.php>
         Research
         </a>
+        " . $researchNav . "
     </li>
     <li class=\"nav_box $editTab\">
     <a class=" . $editTab . " href=" . $domainDirectory . "edit_information/basic_info.php>

@@ -23,11 +23,30 @@
     align-items: center;
 }
 
-.main_form_research {
+
+.research_completed_form {
+    width: 405px;
+    height: 236px;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+}
+
+.button_bar {
+    width: 405px;
+    height: 37px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.research_completed_form {
+    padding-top: 27px;
+}
+
+.research_completed_form #research_title {
+    width: 405px !important;
+}
+
+.research_completed_form .black_button {
+    width: 185px;
 }
