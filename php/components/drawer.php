@@ -2,6 +2,7 @@
 
 // make sure to change this value when running this on your server
 $domain = "http://localhost/apcv_maker/php/";
+$imgDirectory = "http://localhost/apcv_maker";
 /*
  * This is a function that returns the drawer and checks if
  * the current file is the active file by supplying the $navButton
@@ -56,7 +57,11 @@ function drawer($domainDirectory, $navButton)
     <!-- Drawer for the site -->
     <div class='nav_container'>
     <nav>
+    <!-- Todo change the src to the correct domain once done with development -->
+    <img style='width: 100px; padding-top: 20px; margin-bottom: 36px' src='http://localhost/apcv_maker/static/img/College_logo.jpg' alt='college_logo'>
+   
     <ul>
+   
     <li class=\"nav_box $personalTab\">
         <a class=" . $personalTab . " href=" . $domainDirectory . "personal_info.php> Personal Information
         </a>
@@ -86,11 +91,90 @@ function drawer($domainDirectory, $navButton)
         Teaching / Work Experience
         </a>
     </li>
-    <li class=\"nav_box $publicationsTab\">
+    <li class=\"nav_box $publicationsTab \"  id='publication'>
     <a class=" . $publicationsTab . " href=" . $domainDirectory . "publications.php>
          Publications
          </a>
+          <ul id='pub_drawer'>
+    
+    <li>
+    <a class='nav_box sub_nav '>
+    Articles already accepted for publications
+</a>
+</li>
+<li>
+    <a class='nav_box sub_nav'>
+    Articles that have already appeared in Learned Journals
+</a>
+</li>
+<li>
+    <a class='nav_box sub_nav'>
+    Books already Published
+</a>
+</li>
+<li>
+    <a class='nav_box sub_nav'>
+    Books already accepted for publication
+</a>
+</li>
+<li>
+    <a class='nav_box sub_nav'>
+    Chapters in Books already accepted for publication
+</a>
+</li>
+<li>
+    <a class='nav_box sub_nav'>
+    Chapters in Books already Published
+</a>
+</li>
+<li>
+    <a class='nav_box sub_nav'>
+    Revised Chapters in Books
+</a>
+</li>
+<li>
+    <a class='nav_box sub_nav'>
+    Editorial Work
+</a>
+</li>
+<li>
+    <a class='nav_box sub_nav'>
+    Articles that have already appeared in Refereed Conference Proceedings
+</a>
+</li>
+<li>
+    <a class='nav_box sub_nav'>
+    Conference Attended
+</a>
+</li>
+<li>
+    <a class='nav_box sub_nav'>
+    Monographs
+</a>
+</li>
+<li>
+    <a class='nav_box sub_nav'>
+    Technical Reports
+</a>
+</li>
+<li>
+    <a class='nav_box sub_nav'>
+    Ten Best Publications 
+</a>
+</li>
+<li>
+    <a class='nav_box sub_nav'>
+    Patents
+</a>
+</li>
+<li>
+    <a class='nav_box sub_nav'>
+    Research Focus
+</a>
+</li>
+</ul>
     </li>
+   
     <li class=\"nav_box $researchTab\">
     <a class=" . $researchTab . " href=" . $domainDirectory . "research.php>
         Research
