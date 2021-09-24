@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>apcv_maker</title>
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        p {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 <div id="root">
@@ -25,7 +30,12 @@
         *  thank you
         */
         ?>
+        <p>
+            Personal Information
+        </p>
+
     </div>
 </div>
+<script rel="script" src="../js/drawer.js"></script>
 </body>
 </html>

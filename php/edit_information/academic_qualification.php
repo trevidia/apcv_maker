@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>apcv_maker</title>
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/edit_info_nav.css">
+
 </head>
 <body>
 <div id="root">
@@ -19,6 +21,8 @@
     ?>
     <div id="form-container">
         <?php
+        include_once "../../php/components/edit_info_nav.php";
+        echo edit_info_nav();
         /*
         * Todo Make sure to use any style you want for the form labels and input tags
         *  but make sure to save your style in the css directory and make sure not to override
@@ -71,6 +75,10 @@
 
 
     </div>
+</div>       
+    </div>
+
 </div>
+<script rel="script" src="../../js/drawer.js"></script>
 </body>
 </html>
