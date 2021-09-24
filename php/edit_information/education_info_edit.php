@@ -29,7 +29,7 @@
         *  thank you
         */
        ?>
-           <form action="" id="form-container">
+        <form action="" class="form">
             <div style>
             <div>
                 <h1>Education info</h1>
@@ -105,9 +105,9 @@
                         <option value="text">2030</option>
                     </select>
                 </div>
-            
-            
-                <BUtton class="btn" style="background: black; color:white; width: 40%; padding: 10px; border-radius: 5px" >SAVE CHANGES</BUtton>
+
+
+                <BUtton class="black_button">SAVE CHANGES</BUtton>
             </div>
         </form>
     </div>
