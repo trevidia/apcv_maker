@@ -204,6 +204,7 @@ textarea {
     border-radius: 5px;
     cursor: pointer;
     background-color: #212529;
+    box-shadow: 0 6px 6px #b3b3b3;
 }
 
 .year, .day, .month {
@@ -231,10 +232,20 @@ textarea {
 
 .upload_box {
     height: 116px;
-    border: solid #000000 1px;
+    border: dashed #000000 1px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.ondragover {
+    box-shadow: 0 0 10px #D49BA9, 0 0 6px #D49BA9;
+    border-color: #D49BA9;
+    transition: box-shadow 300ms ease-in-out;
+}
+
+#filename {
+    color: #D49BA9;
 }

@@ -49,13 +49,15 @@
                     <input type="file" value="SELECT FILE" id="select_file" class="black_button" hidden>
                     <input type="button" value="SELECT FILE" name="select_file" id="upload_button" class="black_button">
                 </div>
+                <div id="filename">
+                </div>
                 <div>
                     <p>
                         <label for="percent_contribution">
                             Percentage Contribution:
                         </label>
                     </p>
-                    <p>
+                    <p style="font-size: 10px">
                         please input contribution in percentage 20, 30, 50
                     </p>
                     <input type="text" name="percent_contribution" id="percent_contribution" placeholder="30">
@@ -114,5 +116,6 @@
     </div>
 </div>
 <script rel="script" src="../../js/drawer.js"></script>
+<script rel="script" src="../../js/upload_box.js"></script>
 </body>
 </html>
