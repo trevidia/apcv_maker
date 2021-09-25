@@ -19,6 +19,8 @@
     ?>
     <div id="form-container">
         <?php
+        include_once "components/edit_info_nav.php";
+        echo edit_info_nav();
         /*
         * Todo Make sure to use any style you want for the form labels and input tags
         *  but make sure to save your style in the css directory and make sure not to override
@@ -28,5 +30,6 @@
         ?>
     </div>
 </div>
+<script rel="script" src="../js/drawer.js"></script>
 </body>
 </html>

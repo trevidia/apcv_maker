@@ -1,0 +1,52 @@
+.research_circular_selector {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 26px;
+    background-color: #f8f9fa;
+    border: 10px solid #c4c4c4;
+    border-radius: 45px;
+}
+
+.research_circular_selector.active {
+    border-color: #d8a4b1;
+}
+
+.nav_research_container {
+    display: flex;
+    width: 618px;
+    justify-content: space-between;
+}
+
+.research_completed_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.research_completed_form {
+    width: 405px;
+    height: 236px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button_bar {
+    width: 405px;
+    height: 37px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.research_completed_form {
+    padding-top: 27px;
+}
+
+.research_completed_form #research_title {
+    width: 405px !important;
+}
+
+.research_completed_form .black_button {
+    width: 185px;
+}

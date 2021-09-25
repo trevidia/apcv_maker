@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>apcv_maker</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/research_style.css"
 </head>
 <body>
 <div id="root">
@@ -26,7 +27,59 @@
         *  thank you
         */
         ?>
+        <section class="main_form_research">
+            <!--            <section class="nav_research_container">-->
+            <!--                <section class="research_completed_box">-->
+            <!--                    <div class="research_circular_selector active" id="research_completed">-->
+            <!---->
+            <!--                    </div>-->
+            <!--                    <p>-->
+            <!--                        Research Completed-->
+            <!--                    </p>-->
+            <!--                </section>-->
+            <!--                <section class="research_completed_box">-->
+            <!--                    <div class="research_circular_selector" id="research_progress">-->
+            <!---->
+            <!--                    </div>-->
+            <!--                    <p>-->
+            <!--                        Research in Progress-->
+            <!--                    </p>-->
+            <!--                </section>-->
+            <!--                <section class="research_completed_box">-->
+            <!--                    <div class="research_circular_selector" id="project_dissertation">-->
+            <!---->
+            <!--                    </div>-->
+            <!--                    <p>-->
+            <!--                        project dissertation and thesis-->
+            <!--                    </p>-->
+            <!--                </section>-->
+            <!--            </section>-->
+            <form method="post" action="">
+                <section class="research_completed_form">
+                    <h1>
+                        Details About Completed Work
+                    </h1>
+                    <div>
+                        <p>
+                            <label for="research_title">
+                                Research Title:
+                            </label>
+                        </p>
+                        <input type="text" name="research_title" id="research_title" placeholder="submit">
+                    </div>
+
+                    <div class="button_bar">
+                        <input type="button" value="More" class="black_button">
+                        <input type="submit" value="Save" class="black_button">
+                    </div>
+                </section>
+            </form>
+        </section>
+
+
     </div>
+
 </div>
+<script rel="script" src="../js/drawer.js"></script>
 </body>
 </html>

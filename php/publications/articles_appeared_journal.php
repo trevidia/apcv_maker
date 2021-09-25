@@ -134,5 +134,6 @@
 <script type="text/javascript">document.getElementById("file").onchange = function () {
     document.getElementById("uploadFile").value = this.value;
 };</script>
+<script rel="script" src="../../js/drawer.js"></script>
 </body>
 </html>
