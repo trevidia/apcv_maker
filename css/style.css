@@ -69,7 +69,7 @@ nav > ul {
     overflow-x: hidden;
     overflow-wrap: break-word;
     box-shadow: 6px 0 6px rgba(0, 0, 0, 0.16);
-    z-index: 10;
+    z-index: 2;
     padding-bottom: 30px;
 }
 
@@ -141,11 +141,12 @@ nav > ul {
     overflow-y: auto;
     padding-left: 50px;
     padding-top: 36px;
-    z-index: 0;
+    z-index: 1;
 }
 
 #root{
     display: flex;
+    z-index: 0;
 }
 
 
@@ -262,4 +263,65 @@ textarea {
 
 #filename {
     color: #D49BA9;
+}
+
+
+/**
+* The Styles below are for the popUps
+* ==================================
+* ===========POP UP STYLE============
+* ==================================
+ */
+
+#popUp {
+    padding: 15px;
+    width: 496px;
+    height: 309px;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#popUp input {
+    width: 448px;
+}
+
+#country {
+    outline: none;
+    width: 448px;
+    height: 39px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    padding-left: 10px;
+    margin-top: 9px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url("../static/arrow_drop_down_black_24dp.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+}
+
+#country:focus {
+    box-shadow: 0 0 10px #D49BA9, 0 0 6px #D49BA9;
+    border-color: #D49BA9;
+    transition: box-shadow 300ms ease-in-out;
+}
+
+#pop_up_container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 5;
+}
+
+#close_pop_up {
+    float: right;
 }

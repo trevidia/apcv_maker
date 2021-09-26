@@ -6,6 +6,36 @@
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
+
+<div id="pop_up_container">
+    <div id="popUp">
+        <form>
+            <img src="../../static/close_icon.svg" alt="close" id="close_pop_up">
+            <h1>New Journal</h1>
+
+            <div>
+                <p>
+                    <label for="journal_name">
+                        Journal name:
+                    </label>
+                </p>
+                <input type="text" name="journal_name" id="journal_name">
+            </div>
+            <div>
+                <p>
+                    <label for="country">
+                        Country:
+                    </label>
+                </p>
+                <select id="country" name="country">
+                    <option value="Nigeria" selected disabled hidden> Nigeria</option>
+                    <option value="japan"> Japan</option>
+                </select>
+            </div>
+            <input type="submit" name="save_and_continue" value="Save & Continue" class="black_button">
+        </form>
+    </div>
+</div>
 <div id="root">
     <!-- this is the drawer for the apcv maker site -->
     <?php
@@ -30,7 +60,7 @@
             <form>
                 <div>
                     <h1> Articles already accepted for publication</h1>
-                    <input type="button" value="+ Add new Journal" class="black_button">
+                    <input type="button" value="+ Add new Journal" class="black_button" id="new_journal">
                 </div>
                 <div>
                     <p>
@@ -117,5 +147,6 @@
 </div>
 <script rel="script" src="../../js/drawer.js"></script>
 <script rel="script" src="../../js/upload_box.js"></script>
+<script rel="script" src="../../js/pop_up_new_journal.js"></script>
 </body>
 </html>
