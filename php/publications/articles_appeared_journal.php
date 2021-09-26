@@ -15,7 +15,7 @@
     <!-- this is the drawer for the apcv maker site -->
     <?php
     include_once "../components/drawer.php";
-    echo drawer($domain, "publications");
+    echo drawer($domain, ["publications", 'articlesAppearedJournal']);
     ?>
     <?php
     /* TODO form container for the apcv site
@@ -74,8 +74,8 @@
         <input style="opacity:0; " type="file" name="file" id="file" /></div>
 
         <div style="font-size: 15px; font-weight: 400; line-height: 17.58px; padding-top: 60px;"><p>Percentage Contribution:</p>
-        <p style="font-size: 13how to style placeholder
-        px; font-weight: 400; line-height: 4.72;">Please input contribution in percentage e.g 20, 50.</p>
+            <p style="font-size: 13px; font-weight: 400; line-height: 4.72;">Please input contribution in percentage e.g
+                20, 50.</p>
 <div><input type="text" name="" placeholder="20%" style="width: 522px; height: 32px; border-radius: 5px; padding-left: 19px; font-size: 20px; border: 1px solid black;"></div>
     </div>
     <div style="padding-top: 11px; padding-bottom: 15px; font-weight: 400; font-size: 15px; line-height: 17.58px;">

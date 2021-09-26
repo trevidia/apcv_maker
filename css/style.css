@@ -104,7 +104,7 @@ nav > ul {
 
 .nav_box:hover {
     background-color: rgba(255, 242, 254, 0.52);
-    transition: background 200ms ease-in;
+    transition: background 50ms ease-in;
 }
 
 .nav_box ul .nav_box {
@@ -113,9 +113,23 @@ nav > ul {
     padding-left: 20px;
 }
 
-#publication {
-    color: #212529;
-    overflow: hidden;
+#pub_drawer a {
+    color: #0d0d0d;
+}
+
+/*#pub_drawer a.active{*/
+/*    color: #A12B33;*/
+/*    background-color: #FFF6F5;*/
+/*}*/
+#pub_drawer .nav_box.active {
+    /*color: #F06070;*/
+    background-color: #FFF6F5;
+    border-left: none;
+    border-top: 5px solid #F06070;
+}
+
+#research_nav {
+    display: none;
 }
 
 
