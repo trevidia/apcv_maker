@@ -1,8 +1,7 @@
 <?php
 
-// make sure to change this value when running this on your server
+// todo make sure to change this value when running this on your server
 $domain = "http://localhost/apcv_maker/php/";
-$imgDirectory = "http://localhost/apcv_maker";
 /*
  * This is a function that returns the drawer and checks if
  * the current file is the active file by supplying the $navButton
@@ -10,6 +9,7 @@ $imgDirectory = "http://localhost/apcv_maker";
  */
 function drawer($domainDirectory, $navButton)
 {
+    $imgDirectory = "http://localhost/apcv_maker/static/img";
     $pubDrawerValue = null;
     if (gettype($navButton) == "array") {
         $pubDrawerValue = $navButton[1];
@@ -17,9 +17,8 @@ function drawer($domainDirectory, $navButton)
     }
     require_once 'publication_nav.php';
     $pubDrawer = pub_drawer($pubDrawerValue);
-    ob_start();
     require_once 'research_nav.php';
-    $researchNav = ob_get_clean();
+    $researchNav = research_nav($pubDrawerValue);
     $personalTab = "non_active";
     $educationTab = "non_active";
     $academicTab = "non_active";
@@ -72,7 +71,7 @@ function drawer($domainDirectory, $navButton)
     <div class='nav_container'>
     <nav>
     <!-- Todo change the src to the correct domain once done with development -->
-    <img style='width: 100px; padding-top: 20px; margin-bottom: 36px' src='http://localhost/apcv_maker/static/img/College_logo.jpg' alt='college_logo'>
+    <img style='width: 100px; padding-top: 20px; margin-bottom: 36px' src='$imgDirectory/College_logo.jpg' alt='college_logo'>
    
     <ul>
    
@@ -117,7 +116,7 @@ function drawer($domainDirectory, $navButton)
           $pubDrawer
     </li>
    
-    <li class=\"nav_box research_nav $researchTab\">
+    <li class=\"nav_box research_nav $researchTab\" id='research_nav'>
     <a class=" . $researchTab . " href=" . $domainDirectory . "research/research_completed.php>
         Research
         </a>

@@ -29,7 +29,34 @@
         *  thank you
         */
         ?>
-
+        <form>
+            <h1> Change Password</h1>
+            <div>
+                <p>
+                    <label for="current_password">
+                        Current Password:
+                    </label>
+                </p>
+                <input type="password" name="currentPassword" id="current_password">
+            </div>
+            <div>
+                <p>
+                    <label for="new_password">
+                        New Password:
+                    </label>
+                </p>
+                <input type="password" name="newPassword" id="new_password">
+            </div>
+            <div>
+                <p>
+                    <label for="confirm_password">
+                        Confirm Password:
+                    </label>
+                </p>
+                <input type="password" name="confirmPassword" id="confirm_password">
+            </div>
+            <input type="submit" name="submit" value="Submit" class="black_button">
+        </form>
 
     </div>
 </div>

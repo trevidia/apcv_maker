@@ -128,8 +128,15 @@ nav > ul {
     border-top: 5px solid #F06070;
 }
 
-#research_nav {
-    display: none;
+#research_drawer a {
+    color: #0d0d0d;
+}
+
+#research_drawer .nav_box.active {
+    /*display: none;*/
+    background-color: #FFF6F5;
+    border-left: none;
+    border-top: 5px solid #F06070;
 }
 
 
@@ -164,18 +171,23 @@ form > div {
     margin-bottom: 12px;
 }
 
-input {
+input[type="text"], input[type="password"] {
     outline: none;
     height: 32px;
     width: 537px;
     margin-top: 9px;
     padding: 10px;
-    border: solid 1px #000000;
+    border: solid 1px rgb(118, 118, 118);
     border-radius: 5px;
     background-color: #f8f9fa;
 }
 
-input[type="text"]:focus, textarea:focus, .year:focus, .day:focus, .month:focus, #journals:focus {
+input[type="button"], input[type="submit"], button {
+    outline: none;
+    border-color: #212529;
+}
+
+input[type="text"]:focus, textarea:focus, .year:focus, .day:focus, .month:focus, #journals:focus, input[type="password"]:focus {
     box-shadow: 0 0 10px #D49BA9, 0 0 6px #D49BA9;
     border-color: #D49BA9;
     transition: box-shadow 300ms ease-in-out;
@@ -188,7 +200,7 @@ textarea {
     margin-top: 9px;
     resize: none;
     border-radius: 5px;
-    border: solid 1px #000000;
+    border: solid 1px rgb(118, 118, 118);
     background-color: #f8f9fa;
     padding: 10px;
 }
@@ -291,9 +303,6 @@ textarea {
 #country {
     outline: none;
     width: 448px;
-    height: 39px;
-    border-radius: 5px;
-    background-color: #f8f9fa;
     padding-left: 10px;
     margin-top: 9px;
     appearance: none;
@@ -324,4 +333,54 @@ textarea {
 
 #close_pop_up {
     float: right;
+}
+
+
+/**
+* The Styles below are for the best Pubs page
+* ==================================
+* ===========best pub STYLE============
+* ==================================
+ */
+
+.best_pub_card {
+    height: 60px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 6px;
+    background-color: #ede8e6;
+    box-shadow: 0 6px 6px rgba(77, 77, 77, 0.68);
+
+}
+
+.best_pub_card_actions {
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.best_pub_card_title {
+    width: 400px;
+}
+
+.black_button.action {
+    color: #d8a4b1;
+    font-size: 10px;
+    width: 36px;
+    height: 49px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+}
+
+.card_container {
+    margin: 10px;
+}
+
+.best_pub_container {
+    height: 800px;
 }
