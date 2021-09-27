@@ -21,7 +21,7 @@
     <div id="form-container">
         <?php
         include_once "../../php/components/edit_info_nav.php";
-        echo edit_info_nav();
+        echo edit_info_nav('professional');
         /*
         * Todo Make sure to use any style you want for the form labels and input tags
         *  but make sure to save your style in the css directory and make sure not to override
@@ -29,72 +29,28 @@
         *  thank you
         */
         ?>
+        <div class="column" style="float: left; padding-right: 120px;">
+            <h1>Professional Qualifications and Diploma</h1><br/>
+            <div class="label">
+                <div style="padding-bottom: 18px; float: left;">B.sc.(Agr.)(Bachelors Degree in Agriculture 2005)</div>
+                <div class="column" style="padding-top: 0px; padding-left: 420px;">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="10 24 24" width="24px"
+                             fill="#d8a4b1">
+                            <path d="M0 0h24v24H0V0z" fill="none"/>
+                            <path d="M14.06 9.02l.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
+                        </svg>
+                    </a>
+                    <div class="edit"><a href="#" style="color: #d8a4b1;">Edit</a></div>
+                </div>
 
-        <form action="">
-            <h1> Professional Qualifications and Diplomas </h1>
-            <br/>
-    <div class="row mb-4"> Qualifications:
-        <br/>
-        <div class="col-23">
-    <label class="visually-hidden" for="Qualifications"></label><br/>
-    <select class="select" style=" width : 300px; "> id="Qualifications"
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-      <option value="4">Four</option>
-      <option value="5">Five</option>
-      <option value="6">Six</option>
-      <option value="7">Seven</option>
-      <option value="8">Eight</option>
-    </select>
-  </div>
-  <br/>
-  <div class="row mb-4"> Years:
-        <br/>
-        <label class="visually-hidden" for="Years"></label><br/>
-    <select class="select" style=" width : 100px; "> id="Years"
-      <option value="2005">2005</option>
-      <option value="2006">2006</option>
-      <option value="2007">2007</option>
-      <option value="2008">2008</option>
-      <option value="2009">2009</option>
-      <option value="2010">2010</option>
-      <option value="2011">2011</option>
-      <option value="2012">2012</option>
-      <option value="2013">2013</option>
-      <option value="2014">2014</option>
-      <option value="2015">2015</option>
-      <option value="2016">2016</option>
-      <option value="2017">2017</option>
-      <option value="2018">2018</option>
-      <option value="2019">2019</option>
-      <option value="2020">2020</option>
-      <option value="2021">2021</option>
-    </select>
-  </div>
-  <br/>
-  <div class="row mb-4"> Granting Body:
-        <br/>
-        <label class="visually-hidden" for="Granting Body"></label>
-    <select class="select" style=" width : 300px; "> id="Granting Body"
-    <option value="1">National Postgraduate College Of Physicians</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-      <option value="4">Four</option>
-      <option value="5">Five</option>
-      <option value="6">Six</option>
-      <option value="7">Seven</option>
-      <option value="8">Eight</option>
-    </select>
-  </div>
-  <br/>
-    </form>
-    <br/>
-    <button class="btn" style="width: 300px; height:30px;">
-    <left>SAVE CHANGES</button>
-    <button class="btn" style="width: 200px; height:30px;">
-    <right>CANCEL</button>
+            </div>
+
+        </div>
+
     </div>
 </div>
+<script rel="script" src="../../js/drawer.js"></script>
+<script rel="script" src="../../js/edit_info_nav_link.js"></script>
 </body>
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>apcv_maker</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/personal_info_style.css">
 </head>
 <body>
 <div id="root">
@@ -28,49 +29,89 @@
         ?>
         <div class="container">
 
-           <!-- The Personal Information contents  -->
-           <div class="Personal_Info" style="padding-bottom: 18px;">
-            <h1>Personal Information</h1>
-           </div>
-           <div class="row">
-                <div class="column" style="float: left; padding-right: 136px;">
-                    <div class="label">
-                        <div style="padding-bottom: 16px;">Name:</div><br/>
-                        <div style="padding-bottom: 16px;">GSM Number:</div><br/>
-                        <div style="padding-bottom: 16px;">Date of Birth:</div><br/>
-                        <div style="padding-bottom: 16px;">Faculty:</div><br/>
-                        <div style="padding-bottom: 16px;">Department:</div><br/>
-                        <div style="padding-bottom: 16px;">First Academic Appointment:</div><br/>
-                        <div style="padding-bottom: 16px;">Date of First Academic<br/>Appointment:</div><br/>
-                        <div style="padding-bottom: 16px;">Present Appointment:</div><br/>
-                        <div style="padding-bottom: 16px;">Date of Present Academic<br/>Appointment:</div><br/>
-                        <div style="padding-bottom: 16px;">Date of Last Promotion:</div><br/>
-                        <div style="padding-bottom: 16px;">Date of Last Considered:</div><br/>
-                    </div>            
-                </div>
-                <div class="column" style="float: left; padding-right: 136px;">
-                    <div class="label">
-                        <div style="padding-bottom: 16px;">Adeniran Opeyemi Adetoun</div><br/>
-                        <div style="padding-bottom: 16px;">09032797132</div><br/>
-                        <div style="padding-bottom: 16px;">24/10/1985</div><br/>
-                        <div style="padding-bottom: 16px;">Clinical Sciences</div><br/>
-                        <div style="padding-bottom: 16px;">Nursing</div><br/>
-                        <div style="padding-bottom: 16px;">Lecturer II</div><br/>
-                        <div style="padding-bottom: 16px;">01/06/2018</div><br/>
-                        <div style="padding-bottom: 16px;">Lecturer I</div><br/>
-                        <div style="padding-bottom: 16px;">01/06/2018</div><br/>
-                        <div style="padding-bottom: 16px;">01/06/2018</div><br/>
-                        <div style="padding-bottom: 16px;">01/06/2018</div><br/>
-                    </div>            
+            <!-- The Personal Information contents  -->
+            <div class="Personal_Info" style="padding-bottom: 18px;">
+                <h1>Personal Information</h1>
+            </div>
+            <div class="personal_info_container">
+                <div class="table_plus_button">
+                    <table class="personal_info_table">
+
+                        <tr>
+                            <td>Name:</td>
+                            <td>Adeniran Opeyemi Adetoun</td>
+                        </tr>
+                        <tr>
+                            <td>GSM Number:</td>
+                            <td>09032797132</td>
+                        </tr>
+                        <tr>
+                            <td>Date of Birth:</td>
+                            <td>24/10/1985</td>
+                        </tr>
+                        <tr>
+                            <td>Faculty:</td>
+                            <td>Clinical Sciences</td>
+                        </tr>
+                        <tr>
+                            <td>Department:</td>
+                            <td>Nursing</td>
+                        </tr>
+                        <tr>
+                            <td>First Academic Appointment:</td>
+                            <td>Lecturer II</td>
+                        </tr>
+                        <tr>
+                            <td>Date of First Academic Appointment:</td>
+                            <td>01/06/2018</td>
+                        </tr>
+                        <tr>
+                            <td>Present Appointment:</td>
+                            <td>Lecturer I</td>
+                        </tr>
+                        <tr>
+                            <td>Date of Present Academic Appointment:</td>
+                            <td>01/06/2018</td>
+                        </tr>
+                        <tr>
+                            <td>Date of Last Promotion:</td>
+                            <td>01/06/2018</td>
+                        </tr>
+                        <tr>
+                            <td>Date of Last Considered:</td>
+                            <td>01/06/2018</td>
+                        </tr>
+
+                    </table>
+                    <input type="button" class="black_button" value="Edit Info"
+                           onclick="location.href = 'edit_information/basic_info_edit.php'">
                 </div>
 
+
+                <div id="image-box">
+                    <div class="image-container">
+                        <?php
+                        /*
+                         *  The database checks for the passport and then gets an image and supplies the url
+                         */
+                        $image = null;
+                        if ($image != null) {
+                            echo "<img src=\"" . $image . "\" alt=\"Passport\">";
+                        } else {
+                            echo "<p> Passport </p>";
+                        }
+                        ?>
+                    </div>
+                    <input type="file" accept="image/png, image/jpeg" name="passport" id="passport" hidden>
+                    <div id="edit_passport">
+                        Edit Passport
+                    </div>
+                </div>
             </div>
-            <!-- <div class="button" style="height: 25; width: 95; padding-top: 600px; float: left;"><input type="submit" class="edit" name="edit" value="Edit Info"></div>    -->
-            <div style="padding-top: 600px; padding-left: 100px;"><button style="padding-top: 5px; padding-bottom: 5px; padding-left: 60px; padding-right: 60px;" name="submit" class="action_btn submit" type="submit" value="Edit Info" onclick="myFunction()">Edit Info</button></div>
         </div>
-        <div><img >Edit Passport</div>
     </div>
 </div>
 <script rel="script" src="../js/drawer.js"></script>
+<script rel="script" src="../js/edit_passport.js"></script>
 </body>
 </html>

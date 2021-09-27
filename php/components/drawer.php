@@ -10,9 +10,16 @@ $imgDirectory = "http://localhost/apcv_maker";
  */
 function drawer($domainDirectory, $navButton)
 {
-    ob_start();
+    $pubDrawerValue = null;
+    if (gettype($navButton) == "array") {
+        $pubDrawerValue = $navButton[1];
+        $navButton = $navButton[0];
+    }
     require_once 'publication_nav.php';
-    $pubDrawer = ob_get_clean();
+    $pubDrawer = pub_drawer($pubDrawerValue);
+    ob_start();
+    require_once 'research_nav.php';
+    $researchNav = ob_get_clean();
     $personalTab = "non_active";
     $educationTab = "non_active";
     $academicTab = "non_active";
@@ -23,6 +30,7 @@ function drawer($domainDirectory, $navButton)
     $researchTab = "non_active";
     $editTab = "non_active";
     $printTab = "non_active";
+    $professionalTab = "non_active";
     $logoutTab = "non_active";
     switch ($navButton) {
         case "personal":
@@ -33,6 +41,9 @@ function drawer($domainDirectory, $navButton)
             break;
         case "academic":
             $academicTab = "active";
+            break;
+        case "professional":
+            $professionalTab = "active";
             break;
         case "scholarships":
             $scholarshipTab = "active";
@@ -79,6 +90,11 @@ function drawer($domainDirectory, $navButton)
         Academic Qualifications
     </a>
     </li>
+    <li class=\"nav_box $professionalTab\">
+    <a class=" . $professionalTab . " href=" . $domainDirectory . "professional_qualification.php>
+        Professional Qualifications
+    </a>
+    </li>
     <li class=\"nav_box $scholarshipTab\">
     <a class=" . $scholarshipTab . " href=" . $domainDirectory . "scholarships.php>
         Scholarships and Prizes
@@ -94,17 +110,18 @@ function drawer($domainDirectory, $navButton)
         Teaching / Work Experience
         </a>
     </li>
-    <li class=\"nav_box $publicationsTab \"  id='publication'>
+    <li class=\"nav_box $publicationsTab \"  id='publication_nav'>
     <a class=" . $publicationsTab . " href=" . $domainDirectory . "publications/articles_accepted_publication.php>
          Publications
          </a>
-          " . $pubDrawer . "
+          $pubDrawer
     </li>
    
-    <li class=\"nav_box $researchTab\">
-    <a class=" . $researchTab . " href=" . $domainDirectory . "research.php>
+    <li class=\"nav_box research_nav $researchTab\">
+    <a class=" . $researchTab . " href=" . $domainDirectory . "research/research_completed.php>
         Research
         </a>
+         $researchNav
     </li>
     <li class=\"nav_box $editTab\">
     <a class=" . $editTab . " href=" . $domainDirectory . "edit_information/basic_info.php>
