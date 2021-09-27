@@ -1,0 +1,103 @@
+html,
+body,
+header,
+.view {
+    height: 100%;
+}
+
+@media (max-width: 740px) {
+    html,
+    body,
+    header,
+    .view {
+        height: 1000px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+    html,
+    body,
+    header,
+    .view {
+        height: 650px;
+    }
+}
+
+.navbar {
+    box-shadow: none !important;
+    background-color: #D49BA9 !important;
+    /*background: rgb(28, 15, 77) !important;*/
+    padding: 20px;
+}
+
+
+.btn {
+    box-shadow: none !important;
+    background-color: #D49BA9 !important;
+}
+
+.card-body > a {
+    color: #D49BA9;
+}
+
+
+.top-nav-collapse {
+    background-color: #D49BA9 !important;
+    /*background-color: rgb(28, 15, 77) !important;*/
+}
+
+
+@media (max-width: 991px) {
+    .navbar:not(.top-nav-collapse) {
+        background-color: #D49BA9 !important;
+        /*background: rgb(28, 15, 77) !important;*/
+    }
+}
+
+.top-space {
+    margin-top: 150px;
+}
+
+.content-login {
+    max-width: 600px;
+    margin: auto;
+}
+
+.title {
+    letter-spacing: 3px;
+}
+
+
+.nav-link {
+    padding-right: 50px !important;
+    font-weight: bold;
+}
+
+
+div.content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.page {
+    margin-top: 150px;
+}
+
+.contact-link {
+    letter-spacing: 2px;
+}
+
+footer {
+    margin-top: 150px;
+}
+
+.footer-text {
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.security-question {
+    margin-left: 150px;
+    margin-right: 150px;
+}

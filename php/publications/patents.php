@@ -15,7 +15,7 @@
     <!-- this is the drawer for the apcv maker site -->
     <?php
     include_once "../components/drawer.php";
-    echo drawer($domain, "publications");
+    echo drawer($domain, ["publications", 'patents']);
     ?>
     <?php
     /* TODO form container for the apcv site
@@ -53,6 +53,7 @@
     <div style="border: none; width: 431px; height: 38px; background: #1f1f1f; border-radius: 5px; text-align: center; font-weight: 400; font-size: 25px; color: #f8f9fa; line-height: 29.3px;">
     <label for="file" class="filebutton"><div style="text-transform: uppercase; padding-top: 5px; line-height: 29.9px;">Select File</div></label>
 </div>
+
 
 
   </div>
@@ -161,5 +162,7 @@ width: 522px; left: 0px; top: 0px; border-radius: 5px;" value=" ">
 <script type="text/javascript">document.getElementById("file").onchange = function () {
     document.getElementById("uploadFile").value = this.value;
 };</script>
+
+<script rel="script" src="../../js/drawer.js"></script>
 </body>
 </html>

@@ -2,6 +2,7 @@
 
 // make sure to change this value when running this on your server
 $domain = "http://localhost/apcv_maker/php/";
+$imgDirectory = "http://localhost/apcv_maker";
 /*
  * This is a function that returns the drawer and checks if
  * the current file is the active file by supplying the $navButton
@@ -9,6 +10,16 @@ $domain = "http://localhost/apcv_maker/php/";
  */
 function drawer($domainDirectory, $navButton)
 {
+    $pubDrawerValue = null;
+    if (gettype($navButton) == "array") {
+        $pubDrawerValue = $navButton[1];
+        $navButton = $navButton[0];
+    }
+    require_once 'publication_nav.php';
+    $pubDrawer = pub_drawer($pubDrawerValue);
+    ob_start();
+    require_once 'research_nav.php';
+    $researchNav = ob_get_clean();
     $personalTab = "non_active";
     $educationTab = "non_active";
     $academicTab = "non_active";
@@ -19,6 +30,7 @@ function drawer($domainDirectory, $navButton)
     $researchTab = "non_active";
     $editTab = "non_active";
     $printTab = "non_active";
+    $professionalTab = "non_active";
     $logoutTab = "non_active";
     switch ($navButton) {
         case "personal":
@@ -29,6 +41,9 @@ function drawer($domainDirectory, $navButton)
             break;
         case "academic":
             $academicTab = "active";
+            break;
+        case "professional":
+            $professionalTab = "active";
             break;
         case "scholarships":
             $scholarshipTab = "active";
@@ -56,7 +71,11 @@ function drawer($domainDirectory, $navButton)
     <!-- Drawer for the site -->
     <div class='nav_container'>
     <nav>
+    <!-- Todo change the src to the correct domain once done with development -->
+    <img style='width: 100px; padding-top: 20px; margin-bottom: 36px' src='http://localhost/apcv_maker/static/img/College_logo.jpg' alt='college_logo'>
+   
     <ul>
+   
     <li class=\"nav_box $personalTab\">
         <a class=" . $personalTab . " href=" . $domainDirectory . "personal_info.php> Personal Information
         </a>
@@ -69,6 +88,11 @@ function drawer($domainDirectory, $navButton)
     <li class=\"nav_box $academicTab\">
     <a class=" . $academicTab . " href=" . $domainDirectory . "academic_qualification.php>
         Academic Qualifications
+    </a>
+    </li>
+    <li class=\"nav_box $professionalTab\">
+    <a class=" . $professionalTab . " href=" . $domainDirectory . "professional_qualification.php>
+        Professional Qualifications
     </a>
     </li>
     <li class=\"nav_box $scholarshipTab\">
@@ -86,18 +110,21 @@ function drawer($domainDirectory, $navButton)
         Teaching / Work Experience
         </a>
     </li>
-    <li class=\"nav_box $publicationsTab\">
-    <a class=" . $publicationsTab . " href=" . $domainDirectory . "publications.php>
+    <li class=\"nav_box $publicationsTab \"  id='publication_nav'>
+    <a class=" . $publicationsTab . " href=" . $domainDirectory . "publications/articles_accepted_publication.php>
          Publications
          </a>
+          $pubDrawer
     </li>
-    <li class=\"nav_box $researchTab\">
-    <a class=" . $researchTab . " href=" . $domainDirectory . "research.php>
+   
+    <li class=\"nav_box research_nav $researchTab\">
+    <a class=" . $researchTab . " href=" . $domainDirectory . "research/research_completed.php>
         Research
         </a>
+         $researchNav
     </li>
     <li class=\"nav_box $editTab\">
-    <a class=" . $editTab . " href=" . $domainDirectory . "edit_info.php>
+    <a class=" . $editTab . " href=" . $domainDirectory . "edit_information/basic_info.php>
         Edit information
         </a>
     </li>
