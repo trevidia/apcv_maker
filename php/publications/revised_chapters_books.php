@@ -15,7 +15,7 @@
     <!-- this is the drawer for the apcv maker site -->
     <?php
     include_once "../components/drawer.php";
-    echo drawer($domain, "publications");
+    echo drawer($domain, ["publications", 'revisedChapters']);
     ?>
     <?php
     /* TODO form container for the apcv site
@@ -106,8 +106,6 @@
 
 
 </div>
-<script type="text/javascript">document.getElementById("file").onchange = function () {
-    document.getElementById("uploadFile").value = this.value;
-};</script>
+<script rel="script" src="../../js/drawer.js"></script>
 </body>
 </html>

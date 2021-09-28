@@ -7,21 +7,24 @@
     src: url("../static/Roboto/Roboto-Regular.ttf");
 }
 
-::-webkit-scrollbar{
+.nav_container::-webkit-scrollbar {
     width: 10px;
 }
 
-::-webkit-scrollbar-track{
+.nav_container::-webkit-scrollbar-track {
     border-radius: 5px;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.16);
 }
-::-webkit-scrollbar-thumb{
+
+.nav_container::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    background-color: #C82D35;
+    background-color: rgba(255, 158, 162, 0.47);
 }
-::-webkit-scrollbar-thumb:hover{
-    background-color: #ff9ea2;
+
+.nav_container::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(168, 84, 89, 0.63);
 }
+
 
 
 *{
@@ -30,13 +33,32 @@
     box-sizing: border-box;
     font-family: "roboto", serif;
     text-decoration: none;
+    list-style: none;
 }
 
-ul{
+h1 {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 9px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    align-items: center;
+}
+
+nav > ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
+
 .nav_container{
     height: 100vh;
     min-width: 250px;
@@ -47,7 +69,8 @@ ul{
     overflow-x: hidden;
     overflow-wrap: break-word;
     box-shadow: 6px 0 6px rgba(0, 0, 0, 0.16);
-    z-index: 1;
+    z-index: 2;
+    padding-bottom: 30px;
 }
 
 
@@ -60,6 +83,7 @@ ul{
     border-left: solid #A12B33 6px;
 }
 
+
 .nav_box .active{
     color: #A12B33;
 }
@@ -68,32 +92,295 @@ ul{
     padding-left: 6px;
 }
 .nav_box{
-    min-width: 220px;
-    max-height: 55px;
-    margin-bottom: 8px;
-    margin-top: 8px;
+
+    min-height: 15px;
+    margin-bottom: 1px;
+    margin-top: 1px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px;
-    padding-left: 49px;
-}
-.nav_box:hover {
-    background-color: rgba(255, 242, 254, 0.52);
-    transition: background 200ms ease-in;
+    padding: 10px 10px 10px 49px;
 }
 
+.nav_box:hover {
+    background-color: rgba(255, 242, 254, 0.52);
+    transition: background 50ms ease-in;
+}
+
+.nav_box ul .nav_box {
+    font-size: 12px;
+    max-width: 175px;
+    padding-left: 20px;
+}
+
+#pub_drawer a {
+    color: #0d0d0d;
+}
+
+/*#pub_drawer a.active{*/
+/*    color: #A12B33;*/
+/*    background-color: #FFF6F5;*/
+/*}*/
+#pub_drawer .nav_box.active {
+    /*color: #F06070;*/
+    background-color: #FFF6F5;
+    border-left: none;
+    border-top: 5px solid #F06070;
+}
+
+#research_drawer a {
+    color: #0d0d0d;
+}
+
+#research_drawer .nav_box.active {
+    /*display: none;*/
+    background-color: #FFF6F5;
+    border-left: none;
+    border-top: 5px solid #F06070;
+}
 
 
 #form-container{
     background-color: #F8F9FA;
     width: 100%;
     height: 100vh;
-    /*padding-left: 150px;*/
+    display: flex;
+    overflow-y: auto;
+    padding-left: 50px;
     padding-top: 36px;
-    z-index: -1;
+    z-index: 1;
 }
 
 #root{
     display: flex;
+    z-index: 0;
+}
+
+
+/**
+* The Styles below are for the forms
+* ==================================
+* ===========FORMS STYLE============
+* ==================================
+ */
+.form {
+    height: 985px;
+}
+
+form > div {
+    margin-bottom: 12px;
+}
+
+input[type="text"], input[type="password"] {
+    outline: none;
+    height: 32px;
+    width: 537px;
+    margin-top: 9px;
+    padding: 10px;
+    border: solid 1px rgb(118, 118, 118);
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+input[type="button"], input[type="submit"], button {
+    outline: none;
+    border-color: #212529;
+}
+
+input[type="text"]:focus, textarea:focus, .year:focus, .day:focus, .month:focus, #journals:focus, input[type="password"]:focus {
+    box-shadow: 0 0 10px #D49BA9, 0 0 6px #D49BA9;
+    border-color: #D49BA9;
+    transition: box-shadow 300ms ease-in-out;
+}
+
+textarea {
+    outline: none;
+    width: 537px;
+    height: 116px;
+    margin-top: 9px;
+    resize: none;
+    border-radius: 5px;
+    border: solid 1px rgb(118, 118, 118);
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+#journals {
+    outline: none;
+    width: 537px;
+    height: 39px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    padding-left: 10px;
+    margin-top: 9px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url("../static/arrow_drop_down_black_24dp.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+}
+
+.black_button {
+    padding: 0;
+    font-size: 15px;
+    color: #f8f9fa;
+    width: 215px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #212529;
+    box-shadow: 0 6px 6px #b3b3b3;
+}
+
+.year, .day, .month {
+    width: 152px;
+    height: 32px;
+    background-color: #f8f9fa;
+    padding-left: 10px;
+    border-radius: 5px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    background-image: url("../static/arrow_drop_down_black_24dp.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+}
+
+.date_accepted {
+    margin-top: 15px;
+    width: 517px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.upload_box {
+    height: 116px;
+    border: dashed #000000 1px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ondragover {
+    box-shadow: 0 0 10px #D49BA9, 0 0 6px #D49BA9;
+    border-color: #D49BA9;
+    transition: box-shadow 300ms ease-in-out;
+}
+
+#filename {
+    color: #D49BA9;
+}
+
+
+/**
+* The Styles below are for the popUps
+* ==================================
+* ===========POP UP STYLE============
+* ==================================
+ */
+
+#popUp {
+    padding: 15px;
+    width: 496px;
+    height: 309px;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#popUp input {
+    width: 448px;
+}
+
+#country {
+    outline: none;
+    width: 448px;
+    padding-left: 10px;
+    margin-top: 9px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url("../static/arrow_drop_down_black_24dp.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+}
+
+#country:focus {
+    box-shadow: 0 0 10px #D49BA9, 0 0 6px #D49BA9;
+    border-color: #D49BA9;
+    transition: box-shadow 300ms ease-in-out;
+}
+
+#pop_up_container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 5;
+}
+
+#close_pop_up {
+    float: right;
+}
+
+
+/**
+* The Styles below are for the best Pubs page
+* ==================================
+* ===========best pub STYLE============
+* ==================================
+ */
+
+.best_pub_card {
+    height: 60px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 6px;
+    background-color: #ede8e6;
+    box-shadow: 0 6px 6px rgba(77, 77, 77, 0.68);
+
+}
+
+.best_pub_card_actions {
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.best_pub_card_title {
+    width: 400px;
+}
+
+.black_button.action {
+    color: #d8a4b1;
+    font-size: 10px;
+    width: 36px;
+    height: 49px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+}
+
+.card_container {
+    margin: 10px;
+}
+
+.best_pub_container {
+    height: 800px;
 }
