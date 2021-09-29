@@ -32,7 +32,6 @@
 
         ?>
         <div>
-            <form action="post">
                 <h1>Academic Qualifications (With Dates and Grantings)</h1>
                 <h5>Please kindly fill the institutions attended. (Added new Qualification)</h5>
                 <br>
@@ -74,7 +73,7 @@
                 <br>
                 <button>save</button>
                 <button>Add New Qualification</button>
-            </form>
+        </div>
         </div>
     </div>       
 
