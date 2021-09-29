@@ -11,7 +11,7 @@
     <!-- this is the drawer for the apcv maker site -->
     <?php
     include_once "../components/drawer.php";
-    echo drawer($domain, "publications");
+    echo drawer($domain, ["publications", 'editorialWork']);
     ?>
     <?php
     /* TODO form container for the apcv site

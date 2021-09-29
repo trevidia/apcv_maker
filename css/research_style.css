@@ -1,33 +1,33 @@
-.research_circular_selector {
-    width: 90px;
-    height: 90px;
-    margin-bottom: 26px;
-    background-color: #f8f9fa;
-    border: 10px solid #c4c4c4;
-    border-radius: 45px;
+.research_completed_form {
+    width: 500px;
+    height: 500px;
 }
 
-.research_circular_selector.active {
-    border-color: #d8a4b1;
-}
-
-.nav_research_container {
+.button_bar {
+    width: 405px;
+    height: 37px;
     display: flex;
-    width: 618px;
     justify-content: space-between;
+    margin-top: 9px;
 }
 
-.research_completed_box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.research_completed_form {
+    padding-top: 27px;
 }
 
-.main_form_research {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+.research_completed_form div {
+    margin-top: 9px;
+}
+
+.research_completed_form #research_title {
+    width: 405px !important;
+}
+
+.research_completed_form #details {
+    margin-top: 9px;
+    width: 405px !important;
+}
+
+.research_completed_form .black_button {
+    width: 185px;
 }

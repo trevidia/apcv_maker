@@ -10,7 +10,7 @@
     <!-- this is the drawer for the apcv maker site -->
     <?php
     include_once "components/drawer.php";
-    echo drawer($domain, "edit");
+    echo drawer($domain, "professional");
     ?>
     <?php
     /* TODO form container for the apcv site
@@ -19,8 +19,6 @@
     ?>
     <div id="form-container">
         <?php
-        include_once "components/edit_info_nav.php";
-        echo edit_info_nav();
         /*
         * Todo Make sure to use any style you want for the form labels and input tags
         *  but make sure to save your style in the css directory and make sure not to override

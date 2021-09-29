@@ -33,6 +33,11 @@ header,
 
 .btn {
     box-shadow: none !important;
+    background-color: #D49BA9 !important;
+}
+
+.card-body > a {
+    color: #D49BA9;
 }
 
 

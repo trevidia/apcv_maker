@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>apcv_maker</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/research_style.css"
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/research_style.css"
 </head>
 <body>
 <div id="root">
     <!-- this is the drawer for the apcv maker site -->
     <?php
-    include_once "components/drawer.php";
-    echo drawer($domain, "research")
+    include_once "../components/drawer.php";
+    echo drawer($domain, ["research", "project"])
     ?>
     <?php
     /* TODO form container for the apcv site
@@ -30,7 +30,7 @@
         <form method="post" action="">
             <section class="research_completed_form">
                 <h1>
-                    Details About Completed Work
+                    Details about the Project, Dissertation and Thesis:
                 </h1>
                 <div>
                     <p>
@@ -52,6 +52,6 @@
     </div>
 
 </div>
-<script rel="script" src="../js/drawer.js"></script>
+<script rel="script" src="../../js/drawer.js"></script>
 </body>
 </html>

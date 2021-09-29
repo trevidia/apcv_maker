@@ -21,7 +21,7 @@
     <div id="form-container">
         <?php
         include_once "../../php/components/edit_info_nav.php";
-        echo edit_info_nav();
+        echo edit_info_nav('education');
         /*
         * Todo Make sure to use any style you want for the form labels and input tags
         *  but make sure to save your style in the css directory and make sure not to override
@@ -29,7 +29,7 @@
         *  thank you
         */
        ?>
-           <form action="" id="form-container">
+        <form action="" class="form">
             <div style>
             <div>
                 <h1>Education info</h1>
@@ -105,14 +105,15 @@
                         <option value="text">2030</option>
                     </select>
                 </div>
-            
-            
-                <BUtton class="btn" style="background: black; color:white; width: 40%; padding: 10px; border-radius: 5px" >SAVE CHANGES</BUtton>
+
+
+                <BUtton class="black_button">SAVE CHANGES</BUtton>
             </div>
         </form>
     </div>
 
 </div>
 <script rel="script" src="../../js/drawer.js"></script>
+<script rel="script" src="../../js/edit_info_nav_link.js"></script>
 </body>
 </html>

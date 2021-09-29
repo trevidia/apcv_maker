@@ -21,7 +21,7 @@
     <div id="form-container">
         <?php
         include_once "../../php/components/edit_info_nav.php";
-        echo edit_info_nav();
+        echo edit_info_nav('appointment');
         /*
         * Todo Make sure to use any style you want for the form labels and input tags
         *  but make sure to save your style in the css directory and make sure not to override
@@ -29,9 +29,21 @@
         *  thank you
         */
         ?>
-
+        <h1>Appointment Info</h1>
+        <div style="margin-top:15px; position:relative;">
+            <p>First Academic Appointment: </p><br/>
+            <p>Date of First Academic Appointment: </p><br/>
+            <p>Present Appointment: </p><br/>
+            <p>Date of Present Academic Appointment: </p><br/>
+            <p>Date of Last Promotion: </p><br/>
+        </div>
+        <br/>
+        <div style="position:absolute;">
+            <img src="../../static/edit_icon.svg" alt="edit icon"><a>Edit</a>
+        </div>
     </div>
 </div>
 <script rel="script" src="../../js/drawer.js"></script>
+<script rel="script" src="../../js/edit_info_nav_link.js"></script>
 </body>
 </html>
