@@ -18,7 +18,7 @@
     height: 59px;
     display: flex;
     align-items: center;
-    border-top: solid #D49BA9 1px;
+    border-top: 1px solid #D49BA9;
     padding-left: 22px;
     cursor: pointer;
 }

@@ -1,6 +1,6 @@
 (
     function () {
-        let journal = document.getElementById("new_journal");
+        let journal = document.getElementById("new_popup");
         let popUp = document.getElementById("pop_up_container");
         let popUpBox = document.getElementById("popUp");
         let closeButton = document.getElementById('close_pop_up');

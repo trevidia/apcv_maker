@@ -2,6 +2,8 @@
 
 function edit_info_nav($editActive)
 {
+    // todo change domain when development is over
+    $domain = "http://localhost/apcv_maker/php/edit_information";
     $basicInfo = "non-active";
     $appointment = "non-active";
     $education = "non-active";

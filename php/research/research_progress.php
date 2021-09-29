@@ -11,7 +11,7 @@
     <!-- this is the drawer for the apcv maker site -->
     <?php
     include_once "../components/drawer.php";
-    echo drawer($domain, "research")
+    echo drawer($domain, ["research", "inProgress"])
     ?>
     <?php
     /* TODO form container for the apcv site
@@ -30,7 +30,7 @@
         <form method="post" action="">
             <section class="research_completed_form">
                 <h1>
-                    Details About Completed Work
+                    Brief Details about the Research Work in Progress
                 </h1>
                 <div>
                     <p>
@@ -39,6 +39,14 @@
                         </label>
                     </p>
                     <input type="text" name="research_title" id="research_title" placeholder="submit">
+                </div>
+                <div>
+                    <p>
+                        <label for="details">
+                            Details about research work done:
+                        </label>
+                    </p>
+                    <textarea name="details" id="details"></textarea>
                 </div>
 
                 <div class="button_bar">
