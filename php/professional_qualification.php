@@ -25,7 +25,6 @@
         *  the style.css which is our base style incharge of the fonts and the drawer style
         *  thank you
         */
-        <h1>Deep Tones</h1>
         ?>
         <div class="container">
         <h1>Professional Qualifications</h1>
