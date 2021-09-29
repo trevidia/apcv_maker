@@ -31,54 +31,54 @@
         */
 
         ?>
-        <h1>Academic Qualifications (With Dates and Grantings)</h1>
-        <h5>Please kindly fill the institutions attended. (Added new Qualification)</h5>
-        <br>
-        <h2>Qualification</h2>
-        <select>
-            <option >Select...</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-        </select>
-        <br>
-        <h2>Award Institution</h2>
-        <select>
-            <option >Select...</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-        </select>
-        <br>
-        <h2>Granting Date</h2>
-        <select>
-            <option >Day</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-        </select>
-        <select>
-            <option >Month</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-        </select>
-        <select>
-            <option >Year</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-        </select>
-        <br>
-        <button>save</button>
-        <button>Add New Qualification</button>
+        <div>
+            <form action="post">
+                <h1>Academic Qualifications (With Dates and Grantings)</h1>
+                <h5>Please kindly fill the institutions attended. (Added new Qualification)</h5>
+                <br>
+                <h2>Qualification</h2>
+                <select>
+                    <option >Select...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <br>
+                <h2>Award Institution</h2>
+                <select>
+                    <option >Select...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <br>
+                <h2>Granting Date</h2>
+                <select>
+                    <option >Day</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <select>
+                    <option >Month</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <select>
+                    <option >Year</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <br>
+                <button>save</button>
+                <button>Add New Qualification</button>
+            </form>
+        </div>
+    </div>       
 
 
-    </div>
-</div>       
-    </div>
-
-</div>
 <script rel="script" src="../../js/drawer.js"></script>
 </body>
 </html>
