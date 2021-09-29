@@ -29,7 +29,18 @@
         *  thank you
         */
         ?>
-
+        <h1>Appointment Info</h1>
+        <div style="margin-top:15px; position:relative;">
+            <p>First Academic Appointment: </p><br/>
+            <p>Date of First Academic Appointment: </p><br/>
+            <p>Present Appointment: </p><br/>
+            <p>Date of Present Academic Appointment: </p><br/>
+            <p>Date of Last Promotion: </p><br/>
+        </div>
+        <br/>
+        <div style="position:absolute;">
+            <img src="../../static/edit_icon.svg" alt="edit icon"><a>Edit</a>
+        </div>
     </div>
 </div>
 <script rel="script" src="../../js/drawer.js"></script>
