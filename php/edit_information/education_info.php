@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>apcv_maker</title>
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/edit_info_nav.css">
 </head>
 <body>
 <div id="root">
@@ -19,6 +20,8 @@
     ?>
     <div id="form-container">
         <?php
+        include_once "../../php/components/edit_info_nav.php";
+        echo edit_info_nav('education');
         /*
         * Todo Make sure to use any style you want for the form labels and input tags
         *  but make sure to save your style in the css directory and make sure not to override
@@ -26,7 +29,22 @@
         *  thank you
         */
         ?>
+
+<form action="form-container">
+    <h1> Education Info</h1>
+    <div>
+        <div class="education">
+            University of Ibadan
+        </div>
+        <p>
+            1990 - 2000
+        </p>
     </div>
+    </form>
+    </div>
+ 
 </div>
+<script rel="script" src="../../js/drawer.js"></script>
+<script rel="script" src="../../js/edit_info_nav_link.js"></script>
 </body>
 </html>
