@@ -10,7 +10,7 @@
     <!-- this is the drawer for the apcv maker site -->
     <?php
     include_once "../components/drawer.php";
-    echo drawer($domain, "publications");
+    echo drawer($domain, ["publications", 'chapterBooksAccepted']);
     ?>
     <?php
     /* TODO form container for the apcv site
@@ -129,5 +129,7 @@
     </div>
 </div>
 </div>
+
+<script rel="script" src="../../js/drawer.js"></script>
 </body>
 </html>
