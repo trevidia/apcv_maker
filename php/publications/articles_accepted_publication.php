@@ -23,11 +23,11 @@
             </div>
             <div>
                 <p>
-                    <label for="country">
+                    <label for="dropdown_pop">
                         Country:
                     </label>
                 </p>
-                <select id="country" name="country">
+                <select id="dropdown_pop" name="country">
                     <option value="Nigeria" selected disabled hidden> Nigeria</option>
                     <option value="japan"> Japan</option>
                 </select>
@@ -60,7 +60,7 @@
             <form>
                 <div>
                     <h1> Articles already accepted for publication</h1>
-                    <input type="button" value="+ Add new Journal" class="black_button" id="new_journal">
+                    <input type="button" value="+ Add new Journal" class="black_button" id="new_popup">
                 </div>
                 <div>
                     <p>
@@ -147,6 +147,6 @@
 </div>
 <script rel="script" src="../../js/drawer.js"></script>
 <script rel="script" src="../../js/upload_box.js"></script>
-<script rel="script" src="../../js/pop_up_new_journal.js"></script>
+<script rel="script" src="../../js/pop_up.js"></script>
 </body>
 </html>

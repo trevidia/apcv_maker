@@ -31,19 +31,15 @@
         ?>
 
 <form action="form-container">
-        <div><h1>Apointment info</h1></div>
-        <div class="first-academic">
-            <label for="lecturer">first Academic Appointment</label>
-            <select name="lecturer" id="" style="width: 40%; padding: 10px; border-radius: 5px"></select>
-                <option value="text">Lecturer 11</option>
-                <option value="text">Lecturer 1</option>
+    <h1> Education Info</h1>
+    <div>
+        <div class="education">
+            University of Ibadan
         </div>
-        <div>
-            <label for="date">Date of First Academic Appointmnent</label>
-            <select name="date" id=""> </select>
-                <option value="text" >01</option>
-                
-        </div>
+        <p>
+            1990 - 2000
+        </p>
+    </div>
     </form>
     </div>
  

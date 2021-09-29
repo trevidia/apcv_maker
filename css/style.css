@@ -205,7 +205,7 @@ textarea {
     padding: 10px;
 }
 
-#journals {
+select {
     outline: none;
     width: 537px;
     height: 39px;
@@ -251,7 +251,7 @@ textarea {
 }
 
 .date_accepted {
-    margin-top: 15px;
+    margin-top: 9px;
     width: 517px;
     display: flex;
     justify-content: space-between;
@@ -277,6 +277,29 @@ textarea {
     color: #D49BA9;
 }
 
+/**
+* The Styles below are for the edit info
+* ======================================
+* ===========Edit info STYLE============
+* ======================================
+ */
+
+.form_info {
+    display: flex;
+    align-items: center;
+
+}
+
+.edit_button {
+    color: #D49BA9;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+
 
 /**
 * The Styles below are for the popUps
@@ -289,6 +312,7 @@ textarea {
     padding: 15px;
     width: 496px;
     height: 309px;
+    border-radius: 5px;
     background-color: #f8f9fa;
     display: flex;
     flex-direction: column;
@@ -300,9 +324,12 @@ textarea {
     width: 448px;
 }
 
-#country {
+#dropdown_pop {
     outline: none;
     width: 448px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    height: 39px;
     padding-left: 10px;
     margin-top: 9px;
     appearance: none;
