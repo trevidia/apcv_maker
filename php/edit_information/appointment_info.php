@@ -5,6 +5,7 @@
     <title>apcv_maker</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/edit_info_nav.css">
+    <link rel="stylesheet" href="../../css/personal_info_style.css">
 </head>
 <body>
 <div id="root">
@@ -29,17 +30,35 @@
         *  thank you
         */
         ?>
-        <h1>Appointment Info</h1>
-        <div style="margin-top:15px; position:relative;">
-            <p>First Academic Appointment: </p><br/>
-            <p>Date of First Academic Appointment: </p><br/>
-            <p>Present Appointment: </p><br/>
-            <p>Date of Present Academic Appointment: </p><br/>
-            <p>Date of Last Promotion: </p><br/>
-        </div>
-        <br/>
-        <div style="position:absolute;">
-            <img src="../../static/edit_icon.svg" alt="edit icon"><a>Edit</a>
+        <div>
+            <h1>Appointment Info</h1>
+            <div class="form_info">
+                <table class="personal_info_table">
+                    <tr>
+                        <td>First Academic Appointment:</td>
+                        <td>Lecturer II</td>
+                    </tr>
+                    <tr>
+                        <td>Date of First Academic Appointment:</td>
+                        <td>01/06/2018</td>
+                    </tr>
+                    <tr>
+                        <td>Present Appointment:</td>
+                        <td>Lecturer I</td>
+                    </tr>
+                    <tr>
+                        <td>Date of Present Academic Appointment:</td>
+                        <td>01/06/2018</td>
+                    </tr>
+                    <tr>
+                        <td>Date of Last Promotion:</td>
+                        <td>01/06/2018</td>
+                    </tr>
+                </table>
+                <div class="edit_button">
+                    <img src="../../static/edit_icon.svg" alt="edit icon"><a>Edit</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
