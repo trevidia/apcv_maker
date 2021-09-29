@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>apcv_maker</title>
     <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        ::placeholder{color: #D8A4B1;}
+    </style>
 </head>
 <body>
 
@@ -23,11 +26,11 @@
             </div>
             <div>
                 <p>
-                    <label for="country">
+                    <label for="dropdown_pop">
                         Country:
                     </label>
                 </p>
-                <select id="country" name="country">
+                <select id="dropdown_pop" name="country">
                     <option value="Nigeria" selected disabled hidden> Nigeria</option>
                     <option value="japan"> Japan</option>
                 </select>
@@ -61,10 +64,12 @@
             <form>
                 <div>
                     <h1>Patents</h1> 
-                    <input type="button" value="+ Add New Journal" class="black_button" id="new_journal">
+                    <h5>Please Kindly fill in your Publications.</h5>
                 </div>
-                <h5>Please Kindly fill in your Publications.</h5></br>
-                <div>
+                <div style="padding-top: 18px;">
+                    <input type="button" value="+ Add New Journal" class="black_button" id="new_popup">
+                </div>
+                <div style="padding-top: 27px;">
                     <p>
                         <label for="pub_title">
                             Publication title:
@@ -90,13 +95,13 @@
                         </label>
                     </p>
                     <p style="font-size: 10px">
-                        please input contribution in percentage 20, 30, 50
+                        Please input contribution in percentage e.g 20, 50
                     </p>
-                    <input type="text" name="percent_contribution" id="percent_contribution" placeholder="30">
+                    <input type="text" name="percent_contribution" id="percent_contribution" placeholder="20%">
                 </div>
                 <div>
                     <p>
-                        <label for="autors">
+                        <label for="authors">
                             Authors:
                         </label>
                     </p>
@@ -105,7 +110,7 @@
                 <div>
                     <p>
                         <label for="countries">
-                            List of countries:
+                            Country:
                         </label>
                     </p>
                     <select id="countries" name="countries">
@@ -115,24 +120,39 @@
                 </div>
                 <div>
                     <p>
-                        <label for="date_accepted">
-                            Date Accepted
+                        <label for="patent's_number">
+                            Patent's Number:
                         </label>
                     </p>
-                    <div id="date_accepted" class="date_accepted">
+                    <input type="text" name="patent's_number" id="patent's_number">
+                </div>
+                <div>
+                    <p>
+                        <label for="patent's_date">
+                            Patent's Date:
+                        </label>
+                    </p>
+                    <div id="patent's_date" class="patent's_date">
                         <select name="day" class="day">
-                            <option value="1">
-                                1
+                            <option value="day">
+                                Day
+                            </option>
+                            <option value="01">
+                                01
                             </option>
                         </select>
                         <select name="month" class="month">
+                            <option value="month">
+                                Month
+                            </option>
                             <option value="january">
                                 January
                             </option>
                         </select>
-                    
-
                         <select name="year" class="year">
+                            <option value="year">
+                                Year
+                            </option>
                             <option value="2021">
                                 2021
                             </option>
@@ -148,6 +168,6 @@
         </div>
         <script rel="script" src="../../js/drawer.js"></script>
         <script rel="script" src="../../js/upload_box.js"></script>
-        <script rel="script" src="../../js/pop_up_new_journal.js"></script>
+        <script rel="script" src="../../js/pop_up.js"></script>
     </body>
     </html>
