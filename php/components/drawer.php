@@ -72,7 +72,7 @@ function drawer($domainDirectory, $navButton)
     <div class='nav_container'>
     <nav>
     <!-- Todo change the src to the correct domain once done with development -->
-    <img style='width: 100px; padding-top: 20px; margin-bottom: 36px' src='$imgDirectory/College_logo.jpg' alt='college_logo'>
+    <img style='width: 100px; padding-top: 20px; margin-bottom: 36px' src='$imgDirectory/College_logo_new.png' alt='college_logo'>
    
     <ul>
    
