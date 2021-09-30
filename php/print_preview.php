@@ -126,7 +126,7 @@
 
 <div class="VI" style="padding-top: 25px;">
 <div> <h1 style="float: left; padding-right: 38px; font-size: 24px; font-weight: 400; width: 10px;">VI</h1></div>
-<div style="padding-bottom: 15px; font-weight: 500; font-size: 24px; line-height: 31px; text-decoration: underline solid black 2px; color: #000000;
+    <div style="padding-bottom: 15px; font-weight: 500; font-size: 24px; line-height: 31px; text-decoration: underline; color: #000000;
 "><h1>Scholarship, Fellowships and Prizes With respect to Undergraduate Postgraduate work</h1></div>
 <div style="padding-left: 38px; line-height: 23px; float: left; padding-right: 267.234px;">
     <div style="font-size: 12px;">Best Graduating Student

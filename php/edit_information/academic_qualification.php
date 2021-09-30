@@ -35,43 +35,59 @@
                 <h1>Academic Qualifications (With Dates and Grantings)</h1>
                 <h5>Please kindly fill the institutions attended. (Added new Qualification)</h5>
                 <br>
-                <h2>Qualification</h2>
-                <select>
+            <div>
+                <p>
+                    <label for="qualification">Qualification</label>
+                </p>
+                <select name="qualification" id="qualification">
                     <option >Select...</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                 </select>
-                <br>
-                <h2>Award Institution</h2>
-                <select>
+            </div>
+
+            <div>
+                <p>
+                    <label for="award_institution">Award Institution</label>
+                </p>
+                <select name="institution" id="award_institution">
                     <option >Select...</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                 </select>
-                <br>
-                <h2>Granting Date</h2>
-                <select>
-                    <option >Day</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-                <select>
-                    <option >Month</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-                <select>
-                    <option >Year</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-                <br>
-                <button>save</button>
+            </div>
+            <div>
+                <p>
+                    <label for="date_accepted">
+                        Date Accepted
+                    </label>
+                </p>
+                <div id="date_accepted" class="date_accepted">
+                    <select name="day" class="day">
+                        <option value="1">
+                            1
+                        </option>
+                    </select>
+                    <select name="month" class="month">
+                        <option value="january">
+                            January
+                        </option>
+                    </select>
+
+                    <select name="year" class="year">
+                        <option value="2021">
+                            2021
+                        </option>
+                        <option value="2020">
+                            2020
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            <button>save</button>
                 <button>Add New Qualification</button>
         </div>
         </div>

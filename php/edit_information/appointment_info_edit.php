@@ -29,209 +29,213 @@
         *  thank you
         */
         ?>
-        <h1>Appointment Info</h1>
-        <br/>
-        <form action="">
-            <div class="form-outline mb-4">First Academic Appointment:
+        <div>
+            <h1>Appointment Info</h1>
             <br/>
+            <form action="">
+                <div class="form-outline mb-4">First Academic Appointment:
+                    <br/>
+                    <br/>
+                    <label class="visually-hidden" for="first_academic_appointment"></label>
+                    <select class="select" style="width : 500px; height:30px;" id="first_academic_appointment">
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        <option value="4">Four</option>
+                        <option value="5">Five</option>
+                        <option value="6">Six</option>
+                        <option value="7">Seven</option>
+                        <option value="8">Eight</option>
+                    </select>
+                </div>
+                <br/>
+                <div class="col-12"> Date of First Academic Appointment:
+                    <br/>
+                    <br/>
+                    <label class="visually-hidden" for="date_of_first_academic_appointment"></label>
+                    <select class="select" style="width : 150px; height:30px;" id="date_of_first_academic_appointment">
+                        <option value="1">Date</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="8">09</option>
+                        <option value="1">10</option>
+                        <option value="2">11</option>
+                        <option value="3">12</option>
+                        <option value="4">13</option>
+                        <option value="5">14</option>
+                        <option value="6">15</option>
+                        <option value="7">16</option>
+                        <option value="8">17</option>
+                        <option value="8">18</option>
+                        <option value="1">19</option>
+                        <option value="2">20</option>
+                        <option value="3">21</option>
+                        <option value="4">22</option>
+                        <option value="5">23</option>
+                        <option value="6">24</option>
+                        <option value="7">25</option>
+                        <option value="8">26</option>
+                        <option value="8">27</option>
+                        <option value="3">28</option>
+                        <option value="4">29</option>
+                        <option value="5">30</option>
+                        <option value="6">31</option>
+                    </select>
+                    <label class="visually-hidden" for="date_of_first_academic_appointment"></label>
+                    <select class="select" style="width : 150px; height:30px;" id="date_of_first_academic_appointment">
+                        <option value="1">Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="8">September</option>
+                        <option value="1">October</option>
+                        <option value="2">November</option>
+                        <option value="3">December</option>
+                    </select>
+                    <label class="visually-hidden" for="date_of_first_academic_appointment"></label>
+                    <select class="select" style="width : 150px; height:30px;" id="date_of_first_academic_appointment">
+                        <option value="1">Year</option>
+                        <option value="2">2021</option>
+                        <option value="3">2020</option>
+                        <option value="4">2019</option>
+                        <option value="5">2018</option>
+                        <option value="6">2017</option>
+                        <option value="7">2016</option>
+                        <option value="8">2015</option>
+                        <option value="8">2014</option>
+                        <option value="1">2013</option>
+                        <option value="2">2012</option>
+                        <option value="3">2011</option>
+                        <option value="2">2010</option>
+                        <option value="3">2009</option>
+                        <option value="4">2008</option>
+                        <option value="5">2007</option>
+                        <option value="6">2006</option>
+                        <option value="7">2005</option>
+                        <option value="8">2004</option>
+                        <option value="8">2003</option>
+                        <option value="1">2002</option>
+                        <option value="2">2001</option>
+                        <option value="3">2000</option>
+                    </select>
+                </div>
+                <br/>
+                <div class="form-outline mb-4">Present Post:
+                    <br/>
+                    <br/>
+                    <label class="visually-hidden" for="present_post"></label>
+                    <select class="select" style="width : 500px; height:30px;" id="present_post">
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        <option value="4">Four</option>
+                        <option value="5">Five</option>
+                        <option value="6">Six</option>
+                        <option value="7">Seven</option>
+                        <option value="8">Eight</option>
+                    </select>
+                </div>
+                <br/>
+                <div class="col-12"> Date of Present Post:
+                    <br/>
+                    <br/>
+                    <label class="visually-hidden" for="date_of_persent_post"></label>
+                    <select class="select" style="width : 150px; height:30px;" id="date_of_persent_post">
+                        <option value="1">Date</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="8">09</option>
+                        <option value="1">10</option>
+                        <option value="2">11</option>
+                        <option value="3">12</option>
+                        <option value="4">13</option>
+                        <option value="5">14</option>
+                        <option value="6">15</option>
+                        <option value="7">16</option>
+                        <option value="8">17</option>
+                        <option value="8">18</option>
+                        <option value="1">19</option>
+                        <option value="2">20</option>
+                        <option value="3">21</option>
+                        <option value="4">22</option>
+                        <option value="5">23</option>
+                        <option value="6">24</option>
+                        <option value="7">25</option>
+                        <option value="8">26</option>
+                        <option value="8">27</option>
+                        <option value="3">28</option>
+                        <option value="4">29</option>
+                        <option value="5">30</option>
+                        <option value="6">31</option>
+                    </select>
+                    <label class="visually-hidden" for="date_of_present_post"></label>
+                    <select class="select" style="width : 150px; height:30px;" id="date_of_persent_post">
+                        <option value="1">Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="8">September</option>
+                        <option value="1">October</option>
+                        <option value="2">November</option>
+                        <option value="3">December</option>
+                    </select>
+                    <label class="visually-hidden" for="date_of_present_post"></label>
+                    <select class="select" style="width : 150px; height:30px;" id="date_of_present_post">
+                        <option value="1">Year</option>
+                        <option value="2">2021</option>
+                        <option value="3">2020</option>
+                        <option value="4">2019</option>
+                        <option value="5">2018</option>
+                        <option value="6">2017</option>
+                        <option value="7">2016</option>
+                        <option value="8">2015</option>
+                        <option value="8">2014</option>
+                        <option value="1">2013</option>
+                        <option value="2">2012</option>
+                        <option value="3">2011</option>
+                        <option value="2">2010</option>
+                        <option value="3">2009</option>
+                        <option value="4">2008</option>
+                        <option value="5">2007</option>
+                        <option value="6">2006</option>
+                        <option value="7">2005</option>
+                        <option value="8">2004</option>
+                        <option value="8">2003</option>
+                        <option value="1">2002</option>
+                        <option value="2">2001</option>
+                        <option value="3">2000</option>
+                    </select>
+                </div>
+                <button>
+                    SAVE CHANGES
+                </button>
+            </form>
             <br/>
-            <label class="visually-hidden" for="first_academic_appointment"></label>
-            <select class="select" style="width : 500px; height:30px;" id="first_academic_appointment">
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-                <option value="4">Four</option>
-                <option value="5">Five</option>
-                <option value="6">Six</option>
-                <option value="7">Seven</option>
-                <option value="8">Eight</option>
-                </select>
-            </div>
-            <br/>
-            <div class="col-12"> Date of First Academic Appointment:
-            <br/>
-            <br/>
-            <label class="visually-hidden" for="date_of_first_academic_appointment"></label>
-                <select class="select" style="width : 150px; height:30px;" id="date_of_first_academic_appointment">
-                    <option value="1">Date</option>
-                    <option value="1">01</option>
-                    <option value="2">02</option>
-                    <option value="3">03</option>
-                    <option value="4">04</option>
-                    <option value="5">05</option>
-                    <option value="6">06</option>
-                    <option value="7">07</option>
-                    <option value="8">08</option>
-                    <option value="8">09</option>
-                    <option value="1">10</option>
-                    <option value="2">11</option>
-                    <option value="3">12</option>
-                    <option value="4">13</option>
-                    <option value="5">14</option>
-                    <option value="6">15</option>
-                    <option value="7">16</option>
-                    <option value="8">17</option>
-                    <option value="8">18</option>
-                    <option value="1">19</option>
-                    <option value="2">20</option>
-                    <option value="3">21</option>
-                    <option value="4">22</option>
-                    <option value="5">23</option>
-                    <option value="6">24</option>
-                    <option value="7">25</option>
-                    <option value="8">26</option>
-                    <option value="8">27</option>
-                    <option value="3">28</option>
-                    <option value="4">29</option>
-                    <option value="5">30</option>
-                    <option value="6">31</option>         
-                </select>
-            <label class="visually-hidden" for="date_of_first_academic_appointment"></label>
-                <select class="select" style="width : 150px; height:30px;" id="date_of_first_academic_appointment">
-                    <option value="1">Month</option>
-                    <option value="1">January</option>
-                    <option value="2">February</option>
-                    <option value="3">March</option>
-                    <option value="4">April</option>
-                    <option value="5">May</option>
-                    <option value="6">June</option>
-                    <option value="7">July</option>
-                    <option value="8">August</option>
-                    <option value="8">September</option>
-                    <option value="1">October</option>
-                    <option value="2">November</option>
-                    <option value="3">December</option>
-            </select>
-            <label class="visually-hidden" for="date_of_first_academic_appointment"></label>
-                <select class="select" style="width : 150px; height:30px;" id="date_of_first_academic_appointment">
-                    <option value="1">Year</option>
-                    <option value="2">2021</option>
-                    <option value="3">2020</option>
-                    <option value="4">2019</option>
-                    <option value="5">2018</option>
-                    <option value="6">2017</option>
-                    <option value="7">2016</option>
-                    <option value="8">2015</option>
-                    <option value="8">2014</option>
-                    <option value="1">2013</option>
-                    <option value="2">2012</option>
-                    <option value="3">2011</option>
-                    <option value="2">2010</option>
-                    <option value="3">2009</option>
-                    <option value="4">2008</option>
-                    <option value="5">2007</option>
-                    <option value="6">2006</option>
-                    <option value="7">2005</option>
-                    <option value="8">2004</option>
-                    <option value="8">2003</option>
-                    <option value="1">2002</option>
-                    <option value="2">2001</option>
-                    <option value="3">2000</option>
-            </select>
-            </div>
-            <br/>
-            <div class="form-outline mb-4">Present Post:
-            <br/>
-            <br/>
-            <label class="visually-hidden" for="present_post"></label>
-            <select class="select" style="width : 500px; height:30px;" id="present_post">
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-                <option value="4">Four</option>
-                <option value="5">Five</option>
-                <option value="6">Six</option>
-                <option value="7">Seven</option>
-                <option value="8">Eight</option>
-                </select>
-            </div>
-            <br/>
-            <div class="col-12"> Date of Present Post:
-            <br/>
-            <br/>
-            <label class="visually-hidden" for="date_of_persent_post"></label>
-                <select class="select" style="width : 150px; height:30px;" id="date_of_persent_post">
-                    <option value="1">Date</option>
-                    <option value="1">01</option>
-                    <option value="2">02</option>
-                    <option value="3">03</option>
-                    <option value="4">04</option>
-                    <option value="5">05</option>
-                    <option value="6">06</option>
-                    <option value="7">07</option>
-                    <option value="8">08</option>
-                    <option value="8">09</option>
-                    <option value="1">10</option>
-                    <option value="2">11</option>
-                    <option value="3">12</option>
-                    <option value="4">13</option>
-                    <option value="5">14</option>
-                    <option value="6">15</option>
-                    <option value="7">16</option>
-                    <option value="8">17</option>
-                    <option value="8">18</option>
-                    <option value="1">19</option>
-                    <option value="2">20</option>
-                    <option value="3">21</option>
-                    <option value="4">22</option>
-                    <option value="5">23</option>
-                    <option value="6">24</option>
-                    <option value="7">25</option>
-                    <option value="8">26</option>
-                    <option value="8">27</option>
-                    <option value="3">28</option>
-                    <option value="4">29</option>
-                    <option value="5">30</option>
-                    <option value="6">31</option>         
-                </select>
-            <label class="visually-hidden" for="date_of_present_post"></label>
-                <select class="select" style="width : 150px; height:30px;" id="date_of_persent_post">
-                    <option value="1">Month</option>
-                    <option value="1">January</option>
-                    <option value="2">February</option>
-                    <option value="3">March</option>
-                    <option value="4">April</option>
-                    <option value="5">May</option>
-                    <option value="6">June</option>
-                    <option value="7">July</option>
-                    <option value="8">August</option>
-                    <option value="8">September</option>
-                    <option value="1">October</option>
-                    <option value="2">November</option>
-                    <option value="3">December</option>
-            </select>
-            <label class="visually-hidden" for="date_of_present_post"></label>
-                <select class="select" style="width : 150px; height:30px;" id="date_of_present_post">
-                    <option value="1">Year</option>
-                    <option value="2">2021</option>
-                    <option value="3">2020</option>
-                    <option value="4">2019</option>
-                    <option value="5">2018</option>
-                    <option value="6">2017</option>
-                    <option value="7">2016</option>
-                    <option value="8">2015</option>
-                    <option value="8">2014</option>
-                    <option value="1">2013</option>
-                    <option value="2">2012</option>
-                    <option value="3">2011</option>
-                    <option value="2">2010</option>
-                    <option value="3">2009</option>
-                    <option value="4">2008</option>
-                    <option value="5">2007</option>
-                    <option value="6">2006</option>
-                    <option value="7">2005</option>
-                    <option value="8">2004</option>
-                    <option value="8">2003</option>
-                    <option value="1">2002</option>
-                    <option value="2">2001</option>
-                    <option value="3">2000</option>
-            </select>
-            </div>
-        </form>
-        <br/>
-        <button class="btn" style="width:300px; height:30px;">
-        <center>SAVE CHANGES</center>
-        </button>
+
+        </div>
+
     </div>
 </div>
 <script rel="script" src="../../js/drawer.js"></script>

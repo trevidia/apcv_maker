@@ -4,7 +4,80 @@
 
 @font-face {
     font-family: roboto;
-    src: url("../static/Roboto/Roboto-Regular.ttf");
+    src: url("../static/Roboto/Roboto-Black-900.ttf");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url("../static/Roboto/Roboto-BlackItalic-900.ttf");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url("../static/Roboto/Roboto-Bold-700.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url("../static/Roboto/Roboto-BoldItalic-700.ttf");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url("../static/Roboto/Roboto-Medium-500.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url("../static/Roboto/Roboto-MediumItalic-500.ttf");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url("../static/Roboto/Roboto-Regular-400.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url("../static/Roboto/Roboto-Italic-400.ttf");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url("../static/Roboto/Roboto-Light-300.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url("../static/Roboto/Roboto-LightItalic-300.ttf");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url("../static/Roboto/Roboto-Thin-100.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url("../static/Roboto/Roboto-ThinItalic-100.ttf");
+    font-weight: 100;
+    font-style: italic;
 }
 
 .nav_container::-webkit-scrollbar {
@@ -37,9 +110,8 @@
 }
 
 h1 {
-    font-size: 25px;
+    font-size: 30px;
     font-style: normal;
-    font-weight: 700;
     line-height: 29px;
     letter-spacing: 0;
     text-align: left;
@@ -187,7 +259,9 @@ input[type="button"], input[type="submit"], button {
     border-color: #212529;
 }
 
-input[type="text"]:focus, textarea:focus, .year:focus, .day:focus, .month:focus, #journals:focus, input[type="password"]:focus {
+input[type="text"]:focus, textarea:focus, .year:focus, .day:focus,
+.month:focus, #journals:focus, input[type="password"]:focus,
+select:focus {
     box-shadow: 0 0 10px #D49BA9, 0 0 6px #D49BA9;
     border-color: #D49BA9;
     transition: box-shadow 300ms ease-in-out;
@@ -222,7 +296,7 @@ select {
     background-position-y: center;
 }
 
-.black_button {
+.black_button, button {
     padding: 0;
     font-size: 15px;
     color: #f8f9fa;
@@ -299,6 +373,14 @@ select {
     -webkit-align-items: center;
 }
 
+.info {
+    width: 654px;
+    margin-bottom: 30px;
+}
+
+.sized_box {
+    height: 100px;
+}
 
 
 /**

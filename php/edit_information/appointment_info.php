@@ -30,7 +30,7 @@
         *  thank you
         */
         ?>
-        <div>
+        <div class="info">
             <h1>Appointment Info</h1>
             <div class="form_info">
                 <table class="personal_info_table">
@@ -55,9 +55,13 @@
                         <td>01/06/2018</td>
                     </tr>
                 </table>
-                <div class="edit_button">
-                    <img src="../../static/edit_icon.svg" alt="edit icon"><a>Edit</a>
-                </div>
+                <a href="appointment_info_edit.php">
+                    <div class="edit_button">
+                        <img src="../../static/edit_icon.svg" alt="edit icon">
+                        <p>Edit</p>
+                    </div>
+                </a>
+
             </div>
         </div>
     </div>

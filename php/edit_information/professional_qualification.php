@@ -30,7 +30,7 @@
         */
         ?>
         <div class="column" style="float: left; padding-right: 120px;">
-            <h1>Professional Qualifications and Diploma</h1><br/>
+            <h1>Professional Qualifications and Diplomas</h1><br/>
             <div class="label">
                 <div style="padding-bottom: 18px; float: left;">B.sc.(Agr.)(Bachelors Degree in Agriculture 2005)</div>
                 <div class="column" style="padding-top: 0px; padding-left: 420px;">
