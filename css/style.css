@@ -173,6 +173,9 @@ nav > ul {
     justify-content: center;
     padding: 10px 10px 10px 49px;
 }
+li.nav_box{
+    max-width: 250px;
+}
 
 .nav_box:hover {
     background-color: rgba(255, 242, 254, 0.52);
