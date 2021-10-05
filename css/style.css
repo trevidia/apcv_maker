@@ -142,7 +142,6 @@ nav > ul {
     overflow-wrap: break-word;
     box-shadow: 6px 0 6px rgba(0, 0, 0, 0.16);
     z-index: 2;
-    padding-bottom: 30px;
 }
 
 
@@ -362,9 +361,9 @@ select {
  */
 
 .form_info {
+    margin: 12px 0px;
     display: flex;
     align-items: center;
-
 }
 
 .edit_button {
@@ -385,6 +384,13 @@ select {
     height: 100px;
 }
 
+.info_list{
+    padding-left: 30px;
+}
+
+.info_list li{
+    list-style-type: circle;
+}
 
 /**
 * The Styles below are for the popUps

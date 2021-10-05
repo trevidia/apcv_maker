@@ -5,6 +5,7 @@
     <title>apcv_maker</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/edit_info_nav.css">
+
 </head>
 <body>
 <div id="root">
@@ -28,29 +29,71 @@
         *  the style.css which is our base style incharge of the fonts and the drawer style
         *  thank you
         */
+
         ?>
         <div>
-            <h1>Academic Qualifications</h1>
-            <br>
+                <h1>Academic Qualifications (With Dates and Grantings)</h1>
+                <h5>Please kindly fill the institutions attended. (Added new Qualification)</h5>
+                <br>
             <div>
-            <h5>B.Sc(Agr.) (Bachelors Degree in Agriculture 2001) <br> University of Ibadan </h5>
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                    <path d="M0 0h24v24H0V0z" fill="none"/>
-                    <path d="M14.06 9.02l.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
-                </svg>
+                <p>
+                    <label for="qualification">Qualification</label>
+                </p>
+                <select name="qualification" id="qualification">
+                    <option >Select...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
             </div>
-            
-            <div>
-            <h5>B.Sc(Agr.) (Bachelors Degree in Agriculture 2002) <br> University of Ibadan </h5>
-                <svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                    <path d="M0 0h24v24H0V0z" fill="none"/>
-                    <path d="M14.06 9.02l.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
-                </svg>
-            </div>
-        </div>
 
-    </div>
-</div>
+            <div>
+                <p>
+                    <label for="award_institution">Award Institution</label>
+                </p>
+                <select name="institution" id="award_institution">
+                    <option >Select...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div>
+                <p>
+                    <label for="date_accepted">
+                        Date Accepted
+                    </label>
+                </p>
+                <div id="date_accepted" class="date_accepted">
+                    <select name="day" class="day">
+                        <option value="1">
+                            1
+                        </option>
+                    </select>
+                    <select name="month" class="month">
+                        <option value="january">
+                            January
+                        </option>
+                    </select>
+
+                    <select name="year" class="year">
+                        <option value="2021">
+                            2021
+                        </option>
+                        <option value="2020">
+                            2020
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            <button>save</button>
+                <button>Add New Qualification</button>
+        </div>
+        </div>
+    </div>       
+
+
 <script rel="script" src="../../js/drawer.js"></script>
 <script rel="script" src="../../js/edit_info_nav_link.js"></script>
 </body>

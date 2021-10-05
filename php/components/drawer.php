@@ -138,6 +138,10 @@ function drawer($domainDirectory, $navButton)
         Logout 
         </a>   
     </li>
+    <li>
+    <div class='sized_box'>
+    </div>
+    </li>
 </nav>
 </div>
     ";
