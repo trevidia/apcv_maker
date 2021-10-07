@@ -30,10 +30,52 @@
         *  thank you
         */
         ?>
-        <p>
-            Personal Information
-        </p>
+        <div class="form">
+            <form action="">
+                <div>
+                    <div>
+                        <h1>Editorial Work</h1>
+                        <h6>Please kindly copy and paste yoiur documents here</h6>
+                        <br>
+                            <label for="awards">Awards and prizes received:</label><br>
+                        <input type="text" name="" id="" placeholder="">
+                    <div>
+                        <br>
+                            <label for="date_accepted">
+                                    Starting date
+                                </label>
+                        </div>
+                        <div id="date_accepted" class="date_accepted">
+                            <select name="day" class="day">
+                                <option value="1">
+                                    1
+                                </option>
+                            </select>
+                            <select name="month" class="month">
+                                <option value="january">
+                                    January
+                                </option>
+                            </select>
 
+                            <select name="year" class="year">
+                                <option value="2021">
+                                    2021
+                                </option>
+                                <option value="2020">
+                                    2020
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div>
+                <input type="submit" name="save_and_continue" value="Save & Continue" class="black_button">
+                <input type="submit" name="save_and_continue" value="+ Add More" class="black_button">
+                </div>
+                    
+            </form>
+        </div>
     </div>
 </div>
 <script rel="script" src="../js/drawer.js"></script>

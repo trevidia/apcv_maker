@@ -7,6 +7,36 @@
     <!-- CSS only -->
 </head>
 <body>
+
+<div id="pop_up_container">
+    <div id="popUp">
+        <form>
+            <img src="../../static/close_icon.svg" alt="close" id="close_pop_up">
+            <h1>New Journal</h1>
+
+            <div>
+                <p>
+                    <label for="journal_name">
+                        Journal name:
+                    </label>
+                </p>
+                <input type="text" name="journal_name" id="journal_name">
+            </div>
+            <div>
+                <p>
+                    <label for="dropdown_pop">
+                        Country:
+                    </label>
+                </p>
+                <select id="dropdown_pop" name="country">
+                    <option value="Nigeria" selected disabled hidden> Nigeria</option>
+                    <option value="japan"> Japan</option>
+                </select>
+            </div>
+            <input type="submit" name="save_and_continue" value="Save & Continue" class="black_button">
+        </form>
+    </div>
+</div>
 <div id="root">
     <!-- this is the drawer for the apcv maker site -->
     <?php
@@ -27,26 +57,95 @@
         *  thank you
         */
         ?>
-        <div>
-            <form action="post">
-                <h1>Editorial Work</h1><br>
-                <h5>Please kindly fill in your publication</h5><br>
-                <button>Add new Publisher</button>
-                <br>
-                <h4>Book Title:</h4>
-                <input type="text">
-                <br>
-                <div style = "border:1px solid black; height:116px; width:500px; align-items:center;  justify-content:center; display:flex;">
-                    <h5>Drop chapter published here to start uploading</h5><br>
-                    <button type="button" class="btn btn-secondary">SELECT FILE</button>
-                </div >
-                <span>Filename.pdf</span>
-                <br>
-                <label for="percentage_contribution">Percentage Contribution:</label>
-                <h6>Please input Contribution in percentage e.g 20, 30</h6><br>
-                <input type="text">
-                
-                
+        <div class="form">
+            <form>
+                <div>
+                    <h1>Editorial Work</h1>
+                    <h6>Please kindly fill in your publications</h6>
+                    <br>
+                    <input type="button" value="+ Add New Publisher" class="black_button" id="new_popup">
+                </div>
+                <div>
+                    <p>
+                        <label for="pub_title">Book's Title:</label>
+                    </p>
+                    <input type="text" name="pub_title" id="pub_title" placeholder="Book's Title">
+                </div>
+                <div class="upload_box" id="uploader">
+                    <p>
+                        <label for="upload_button">
+                            Drop Chapter Published here to start uploading
+                        </label>
+                    </p>
+                    <input type="file" value="SELECT FILE" id="select_file" class="black_button" hidden>
+                    <input type="button" value="SELECT FILE" name="select_file" id="upload_button" class="black_button">
+                </div>
+                <div id="filename">
+                </div>
+                <div>
+                    <p>
+                        <label for="percent_contribution">
+                            Percentage Contribution:
+                        </label>
+                    </p>
+                    <p style="font-size: 10px">
+                        please input contribution in percentage 20, 30, 50
+                    </p>
+                    <input type="text" name="percent_contribution" id="percent_contribution" placeholder="20%">
+                </div>
+                <div>
+                    <p>
+                        <label for="authors">
+                            Editors:
+                        </label>
+                    </p>
+                    <textarea id="authors" name="authors" required></textarea>
+                </div>
+                <div>
+                    <p>
+                        <label for="publishers">
+                            Publishers:
+                        </label>
+                    </p>
+                    <select id="publishers" name="publishers">
+                        <option value="1"> Wadell, Lagos, Nigeria</option>
+                        <option value="2">Macmillian, Nigeria</option>
+                    </select>
+                </div>
+                <div>
+                    <p>
+                        <label for="pages">
+                            Pages
+                        </label>
+                    </p>
+                    <input type="text" name="pages" id="pages" >
+                </div>
+                <div>
+                    <p>
+                        <label for="isbn">
+                            ISBN:
+                        </label>
+                    </p>
+                    <input type="text" name="isbn" id="isbn" >
+                </div>
+                <div>
+                    <p>
+                        <label for="date_accepted">
+                            Years of Publication:
+                        </label>
+                    </p>
+                    <div id="year_of_publication" class="year_of_publication">
+                        <select name="year" class="year">
+                            <option value="2021">
+                                2021
+                            </option>
+                            <option value="2020">
+                                2020
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <input type="submit" name="save_and_continue" value="Save & Continue" class="black_button">
 
             </form>
         </div>
