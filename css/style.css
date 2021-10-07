@@ -334,6 +334,7 @@ select {
 }
 
 .upload_box {
+    width: 537px;
     height: 116px;
     border: dashed #000000 1px;
     border-radius: 5px;

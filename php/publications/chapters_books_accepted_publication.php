@@ -26,7 +26,7 @@
         *  thank you
         */
         ?>
-        <div class="" style="margin-left:100px;">
+        <div class="">
         <h2>Chapter in Books Already Accepted for Publication</h2>
         <h6>Please kindly fill in your Publications.</h6><br/>
         <button style="width:280px; height:30px;"><h2>+ Add New Publisher</h2></button><br/>
