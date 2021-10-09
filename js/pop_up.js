@@ -1,6 +1,6 @@
 (
     function () {
-        let journal = document.getElementById("new_popup");
+        let newPopUp = document.getElementById("new_popup");
         let popUp = document.getElementById("pop_up_container");
         let popUpBox = document.getElementById("popUp");
         let closeButton = document.getElementById('close_pop_up');
@@ -35,7 +35,7 @@
 
             }
         );
-        journal.onclick = function () {
+        newPopUp.onclick = function () {
             popUp.style.display = "flex";
             popUp.animate(
                 [

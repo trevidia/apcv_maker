@@ -31,7 +31,7 @@
                 <div>
                     <h1> Academic Qualifications (With Dates and Grantings)</h1>
                     <p>Please kindly fill the institutions attended. (Added new Qualification)</p></br>
-                    <input type="button" value="+ Add New Qualification" class="black_button" id="new_qualificaion" style="padding-style: 16px;">
+                    <input type="button" value="+ Add New Qualification" class="black_button" id="new_qualificaion" >
                 
                 </div>    
                 <div style="padding-top: 32px;">

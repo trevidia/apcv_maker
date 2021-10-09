@@ -415,6 +415,11 @@ select {
 #popUp input {
     width: 448px;
 }
+#popUp form{
+    padding-top: 10px;
+    width: 448px;
+    height: 309px;
+}
 
 #dropdown_pop {
     outline: none;

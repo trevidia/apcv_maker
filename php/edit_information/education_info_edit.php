@@ -29,7 +29,8 @@
         *  thank you
         */
        ?>
-        <form action="" class="form">
+       <div class="form">
+        <form action="">
             <div style>
             <div>
                 <h1>Education info</h1>
@@ -110,6 +111,7 @@
                 <BUtton class="black_button">SAVE CHANGES</BUtton>
             </div>
         </form>
+        </div>
     </div>
 
 </div>
