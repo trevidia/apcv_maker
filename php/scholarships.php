@@ -34,15 +34,15 @@
             <form action="">
                 <div>
                     <div>
-                        <h1>Editorial Work</h1>
+                        <h1>Scholarships and Prizes</h1>
                         <h6>Please kindly copy and paste yoiur documents here</h6>
                         <br>
-                            <label for="awards">Awards and prizes received:</label><br>
+                            <label for="awards">Awards or prizes received:</label><br>
                         <input type="text" name="" id="" placeholder="">
                     <div>
                         <br>
                             <label for="date_accepted">
-                                    Starting date
+                                    Granting date
                                 </label>
                         </div>
                         <div id="date_accepted" class="date_accepted">

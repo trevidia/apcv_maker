@@ -6,6 +6,33 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+<div id="pop_up_container">
+    <div id="popUp">
+        <form>
+            <img src="../static/close_icon.svg" alt="close" id="close_pop_up">
+            <h1>New Qualification</h1>
+
+            <div>
+                <p>
+                    <label for="degree">
+                        Degree Name:
+                    </label>
+                </p>
+                <input type="text" name="degree" id="degree">
+            </div>
+            <div>
+                <p>
+                    <label for="specialisation">
+                        Specialisation(e.g Sports):
+                    </label>
+                </p>
+                <input type="text" name="specialisation" id="specialisation">
+            </div>
+            
+            <input type="submit" name="save_and_continue" value="Save & Continue" class="black_button">
+        </form>
+    </div>
+</div>
 <div id="root">
     <!-- this is the drawer for the apcv maker site -->
     <?php
@@ -31,7 +58,7 @@
                 <div>
                     <h1> Academic Qualifications (With Dates and Grantings)</h1>
                     <p>Please kindly fill the institutions attended. (Added new Qualification)</p></br>
-                    <input type="button" value="+ Add New Qualification" class="black_button" id="new_qualificaion" >
+                    <input type="button" value="+ Add New Qualification" class="black_button" id="new_popup" >
                 
                 </div>    
                 <div style="padding-top: 32px;">
@@ -98,12 +125,13 @@
 
                 <div style="padding-top: 35px;">
                     <input type="submit" name="save" value="SAVE" class="black_button">
-                    <input type="submit" name="add_qualifications" value="+ Add Qualifications" class="black_button">
+                    <input type="submit" name="add_qualifications" value="+ Add More" class="black_button">
                 </div>
 
 
     </div>
 </div>
+<script rel="script" src="../js/pop_up.js"></script>
 <script rel="script" src="../js/drawer.js"></script>
 </body>
 </html>

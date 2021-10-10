@@ -240,6 +240,9 @@ li.nav_box{
 .form {
     height: 985px;
 }
+.form > div {
+   margin-bottom: 12px;
+}
 
 form > div {
     margin-bottom: 12px;
@@ -382,7 +385,7 @@ select {
 }
 
 .sized_box {
-    height: 100px;
+    height: 50px;
 }
 
 .info_list{

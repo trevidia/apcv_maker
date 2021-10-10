@@ -60,7 +60,7 @@
                 <h1>
                     University Education
                 </h1>
-                <input type="button" value="+ Add new Journal" class="black_button" id="new_popup">
+                <input type="button" value="+ Add new institute" class="black_button" id="new_popup">
             </div>
             <div style="margin-bottom: 9px">
                 <p>
@@ -125,6 +125,7 @@
                     </select>
                 </div>
             </div>
+            <div class="sized_box"></div>
             <input type="submit" name="save_and_continue" value="Save & Continue" class="black_button">
 
         </form>

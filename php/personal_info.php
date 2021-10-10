@@ -27,7 +27,7 @@
         *  thank you
         */
         ?>
-        <div class="container">
+        <div class="form">
 
             <!-- The Personal Information contents  -->
             <div class="Personal_Info" style="padding-bottom: 18px;">
