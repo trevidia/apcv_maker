@@ -98,9 +98,7 @@
     background-color: rgba(168, 84, 89, 0.63);
 }
 
-
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -125,13 +123,13 @@ nav {
     align-items: center;
 }
 
-nav > ul {
+nav>ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.nav_container{
+.nav_container {
     height: 100vh;
     min-width: 250px;
     display: flex;
@@ -144,26 +142,25 @@ nav > ul {
     z-index: 2;
 }
 
-
 .nav_container nav a {
-
     font-size: 15px;
 }
-.nav_box.active{
+
+.nav_box.active {
     color: #A12B33;
     border-left: solid #A12B33 6px;
 }
 
-
-.nav_box .active{
+.nav_box .active {
     color: #A12B33;
 }
-.nav_box .non_active{
+
+.nav_box .non_active {
     color: #212529;
     padding-left: 6px;
 }
-.nav_box{
 
+.nav_box {
     min-height: 15px;
     margin-bottom: 1px;
     margin-top: 1px;
@@ -172,7 +169,8 @@ nav > ul {
     justify-content: center;
     padding: 10px 10px 10px 49px;
 }
-li.nav_box{
+
+li.nav_box {
     max-width: 250px;
 }
 
@@ -191,10 +189,18 @@ li.nav_box{
     color: #0d0d0d;
 }
 
+
 /*#pub_drawer a.active{*/
+
+
 /*    color: #A12B33;*/
+
+
 /*    background-color: #FFF6F5;*/
+
+
 /*}*/
+
 #pub_drawer .nav_box.active {
     /*color: #F06070;*/
     background-color: #FFF6F5;
@@ -213,8 +219,7 @@ li.nav_box{
     border-top: 5px solid #F06070;
 }
 
-
-#form-container{
+#form-container {
     background-color: #F8F9FA;
     width: 100%;
     height: 100vh;
@@ -225,7 +230,7 @@ li.nav_box{
     z-index: 1;
 }
 
-#root{
+#root {
     display: flex;
     z-index: 0;
 }
@@ -237,18 +242,21 @@ li.nav_box{
 * ===========FORMS STYLE============
 * ==================================
  */
+
 .form {
     height: 985px;
 }
-.form > div {
-   margin-bottom: 12px;
-}
 
-form > div {
+.form>div {
     margin-bottom: 12px;
 }
 
-input[type="text"], input[type="password"] {
+form>div {
+    margin-bottom: 12px;
+}
+
+input[type="text"],
+input[type="password"] {
     outline: none;
     height: 32px;
     width: 537px;
@@ -259,13 +267,20 @@ input[type="text"], input[type="password"] {
     background-color: #f8f9fa;
 }
 
-input[type="button"], input[type="submit"], button {
+input[type="button"],
+input[type="submit"],
+button {
     outline: none;
     border-color: #212529;
 }
 
-input[type="text"]:focus, textarea:focus, .year:focus, .day:focus,
-.month:focus, #journals:focus, input[type="password"]:focus,
+input[type="text"]:focus,
+textarea:focus,
+.year:focus,
+.day:focus,
+.month:focus,
+#journals:focus,
+input[type="password"]:focus,
 select:focus {
     box-shadow: 0 0 10px #D49BA9, 0 0 6px #D49BA9;
     border-color: #D49BA9;
@@ -301,7 +316,8 @@ select {
     background-position-y: center;
 }
 
-.black_button, button {
+.black_button,
+button {
     padding: 0;
     font-size: 15px;
     color: #f8f9fa;
@@ -313,7 +329,9 @@ select {
     box-shadow: 0 6px 6px #b3b3b3;
 }
 
-.year, .day, .month {
+.year,
+.day,
+.month {
     width: 152px;
     height: 32px;
     background-color: #f8f9fa;
@@ -357,6 +375,7 @@ select {
     color: #D49BA9;
 }
 
+
 /**
 * The Styles below are for the edit info
 * ======================================
@@ -388,13 +407,14 @@ select {
     height: 50px;
 }
 
-.info_list{
+.info_list {
     padding-left: 30px;
 }
 
-.info_list li{
+.info_list li {
     list-style-type: circle;
 }
+
 
 /**
 * The Styles below are for the popUps
@@ -415,13 +435,15 @@ select {
     align-items: center;
 }
 
-#popUp input {
+#popUp input,
+#popUp textarea {
     width: 448px;
 }
-#popUp form{
+
+#popUp form {
     padding-top: 10px;
     width: 448px;
-    height: 309px;
+    min-height: 309px;
 }
 
 #dropdown_pop {
@@ -479,7 +501,6 @@ select {
     border-radius: 6px;
     background-color: #ede8e6;
     box-shadow: 0 6px 6px rgba(77, 77, 77, 0.68);
-
 }
 
 .best_pub_card_actions {

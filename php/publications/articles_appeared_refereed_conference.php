@@ -8,6 +8,44 @@
 </head>
 
 <body>
+
+    <div id="pop_up_container">
+        <div id="popUp" style="height: 390px">
+            <form>
+                <img src="../../static/close_icon.svg" alt="close" id="close_pop_up">
+                <h1>New Publisher</h1>
+
+                <div>
+                    <p>
+                        <label for="publisher">
+                            Publisher's Name:
+                        </label>
+                    </p>
+                    <input type="text" name="publisher" id="publisher">
+                </div>
+                <div>
+                    <p>
+                        <label for="publisher">
+                            Publisher's City:
+                        </label>
+                    </p>
+                    <input type="text" name="publishersCity" id="publishersCity">
+                </div>
+                <div>
+                    <p>
+                        <label for="dropdown_pop">
+                            Country:
+                        </label>
+                    </p>
+                    <select id="dropdown_pop" name="country">
+                        <option value="Nigeria" selected disabled hidden> Nigeria</option>
+                        <option value="japan"> Japan</option>
+                    </select>
+                </div>
+                <input type="submit" name="save_and_continue" value="Save & Continue" class="black_button">
+            </form>
+        </div>
+    </div>
     <div id="root">
         <!-- this is the drawer for the apcv maker site -->
         <?php
@@ -33,7 +71,7 @@
                     <div>
                         <h1> Articles Published in Conference Proceedings:</h1>
 
-                        <input type="button" value="+ Add new Journal" class="black_button" id="new_journal">
+                        <input type="button" value="+ Add new Journal" class="black_button" id="new_popup">
 
                         <p style="font-size: 10px">
                     </div>
@@ -133,17 +171,23 @@
                         </p>
                         <input type="text" name="pub_title" id="pub_title" placeholder="">
                     </div>
+                    <div>
                     <input type="submit" name="save_and_continue" value="Save & Continue" class="black_button">
+                    <div class="sized_box"></div>
+                    </div>
+                  
             </div>
             </form>
         </div>
 
 
-       
+
     </div>
     </div>
     </div>
     <script rel="script" src="../../js/drawer.js"></script>
+    <script rel="script" src="../../js/pop_up.js"></script>
+    <script rel="script" src="../../js/upload_box.js"></script>
 </body>
 
 </html>

@@ -1,119 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>apcv_maker</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
+
 <body>
-<div id="root">
-    <!-- this is the drawer for the apcv maker site -->
-    <?php
-    include_once "../components/drawer.php";
-    echo drawer($domain, ["publications", 'booksPublished']);
-    ?>
-    <?php
-    /* TODO form container for the apcv site
+    <div id="pop_up_container">
+        <div id="popUp" style="height: 390px">
+            <form>
+                <img src="../../static/close_icon.svg" alt="close" id="close_pop_up">
+                <h1>New Publisher</h1>
+
+                <div>
+                    <p>
+                        <label for="publisher">
+                            Publisher's Name:
+                        </label>
+                    </p>
+                    <input type="text" name="publisher" id="publisher">
+                </div>
+                <div>
+                    <p>
+                        <label for="publisher">
+                            Publisher's City:
+                        </label>
+                    </p>
+                    <input type="text" name="publishersCity" id="publishersCity">
+                </div>
+                <div>
+                    <p>
+                        <label for="dropdown_pop">
+                            Country:
+                        </label>
+                    </p>
+                    <select id="dropdown_pop" name="country">
+                        <option value="Nigeria" selected disabled hidden> Nigeria</option>
+                        <option value="japan"> Japan</option>
+                    </select>
+                </div>
+                <input type="submit" name="save_and_continue" value="Save & Continue" class="black_button">
+            </form>
+        </div>
+    </div>
+    <div id="root">
+        <!-- this is the drawer for the apcv maker site -->
+        <?php
+        include_once "../components/drawer.php";
+        echo drawer($domain, ["publications", 'booksPublished']);
+        ?>
+        <?php
+        /* TODO form container for the apcv site
      *  write all your code inside the div with id of form-container
      */
-    ?>
-    <div id="form-container">
-        <?php
-        /*
+        ?>
+        <div id="form-container">
+            <?php
+            /*
         * Todo Make sure to use any style you want for the form labels and input tags
         *  but make sure to save your style in the css directory and make sure not to override
         *  the style.css which is our base style incharge of the fonts and the drawer style
         *  thank you
         */
-        ?>
-        <div class="container">
-            <!--Content for books already published-->
-        <h1>Book Already Published</h1>
-        <h6>Please kindly fill in your Publications</h6><br/>
-        <!-- <button style="color: white; font-size: 100%; background-color: black; width: 294; height: 37; padding-right: 15px ">+ Add New Publisher</button><br/> -->
-        <div>
-            <input type="submit" name="submit" style="color: white; width: 294px; height: 37px; border-radius: 6px; font-family: Roboto; 
-            background-color: black; font-size: 150%;" value="+ Add New Publisher"><br/>
-        </div><br/>
-        <p>Book's Title:</p><br/>
+            ?>
+            <div class="form">
+                <!--Content for books already published-->
+                <h1>Book Already Published</h1>
+                <h6>Please kindly fill in your Publications</h6><br />
+                <!-- <button style="color: white; font-size: 100%; background-color: black; width: 294; height: 37; padding-right: 15px ">+ Add New Publisher</button><br/> -->
+                <div>
+                    <input type="submit" name="submit" class="black_button" id="new_popup" value="+ Add New Publisher"><br />
+                </div><br />
+                <p>Book's Title:</p><br />
 
-        <div>
-        
-        <input type="text" name="submit" style="height: 32px; width: 522px; border: 1px solid black;" value=" "><br/>
-        </div><br/>
+                <div>
 
+                    <input type="text" name="submit" value=" "><br />
+                </div><br />
 
-        <div class="select" style="border: 1px solid black; width: 517px; height: 116px; border-radius: 5px; text-align: center;">
-<div style="font-size: 15px; font-weight: 400; line-height: 17.58px; padding-bottom: 17px; padding-top: 20px;">Drop Publication here to start uploading</div>
-<div class="row upload" style="padding-right: 43px; padding-left: 43px;">
-    <form enctype="multipart/form-data" action="" method="post" class="col-md-12">
-    <div style="border: none; width: 431px; height: 38px; background: #1f1f1f; border-radius: 5px; text-align: center; font-weight: 400; font-size: 25px; color: #f8f9fa; line-height: 29.3px;">
-    <label for="file" class="filebutton"><div style="text-transform: uppercase; padding-top: 5px; line-height: 29.9px;">Select File</div></label>
-</div>
+                <div class="upload_box" id="uploader" style="margin-bottom: 9px;">
+                    <p>
+                        <label for="upload_button">
+                            Drop Acceptance letter here to start uploading
+                        </label>
+                    </p>
+                    <input type="file" value="SELECT FILE" id="select_file" class="black_button" hidden>
+                    <input type="button" value="SELECT FILE" name="select_file" id="upload_button" class="black_button">
+                </div>
+                <div id="filename">
+                </div>
+                <p style="font-size: 150%;">Percentage Contribute:</p><br />
+                <p style="font-size: 90%;">Please input contribution in percentage e.g 20, 50</p><br />
+                <div>
+                    <input type="text" name="submit" placeholder="20">
+                </div><br />
+                <div>
+                    <p>Authors:</p><br />
+                    <input type="text" name="submit" value=" ">
+                </div><br />
+                <p>Publishers:</p>
+                <br />
+                <select>
 
+                    <option value="Wadell, Lagos, Nigeria" selected>Wadell, Lagos, Nigeria<optiion>
+                    <option>
+                        </optiion>
+                    <option>
+                        </optiion>
+                    <option>
+                        </optiion>
+                </select><br />
+                <br />
+                <div>
+                    <p>Pages:</p><br />
+                    <input type="text" name="Pages" value=" ">
+                    <br />
+                    <p>ISBN:</p><br />
+                    <input type="text" name="ISBN" value=" "><br />
+                </div><br />
+                <p>Year of Publication:</p>
+                <select style="width: 153px; height: 32px;">
 
-  </div>
+                    <option value="Year" underlined, selected>Year<optiion>
+                    <option>
+                        </optiion>
+                    <option>
+                        </optiion>
+                    <option>
+                        </optiion>
+                </select>
+                <br />
+                <br />
 
-
-</form>
-</div>
-
-
-        
-        
-        <p style="color: pink;">Filename.pdf</p><br/>
-        <p style="font-size: 150%;">Percentage Contribute:</p><br/>
-        <p style="font-size: 90%;">Please input contribution in percentage e.g 20, 50</p><br/>
-        <div>
-        <input type="text" name="submit" style="height: 32px; width: 522px; border: 1px solid black;" placeholder="20%;" value=" ">
-        </div><br/>
-        <div>
-        <p style="font-size: ">Authors:</p><br/>
-        <input type="text" name="submit" style="height: 116px; width: 517px; border: 1px solid black;" value=" ">
-        </div><br/>
-        <p>Publishers:</p>
-        <br/>
-        <select style="width: 517px; height: 39px;">
-            
-        <option value="Wadell, Lagos, Nigeria" selected>Wadell, Lagos, Nigeria<optiion>
-        <option></optiion>
-        <option></optiion>
-        <option></optiion>
-        </select><br/>
-        <br/>
-    <div>
-         <p>Pages:</p><br/>
-        <input type="text" name="Pages" style="height: 32px; width: 522px; border: 1px solid black;" value=" ">
-        <br/>
-         <p>ISBN:</p><br/>   
-        <input type="text" name="ISBN" style="height: 32px; width: 522px; border: 1px solid black;" value=" "><br/>
-    </div><br/>
-    <p>Year of Publication:</p>
-    <select style="width: 153px; height: 32px;">
-            
-            <option value="Year" underlined, selected>Year<optiion>
-            <option></optiion>
-            <option></optiion>
-            <option></optiion>
-            </select>
-            <br/><br/>
-        <input type="checkbox" name="prm" value="pub" style="font-size: 30%;"><label for="prm">New Publication after last Promotion or Consideration:</label>
-        <br/>
-        <br/>
-        <select style="width: 153px; height: 32px;">
-            
-            <option value="Year" underlined, selected>Year<optiion>
-            <option></optiion>
-            <option></optiion>
-            <option></optiion>
-            </select>
-            <br/><br/>
-            <br/>
-    <input type="submit" name="submit" style="color: white; width: 431px; height: 38px; background-color: black; font-size: 150%; border-radius: 6px; font-family: Roboto; 
-            font-weight: 500" value=" Save and Continue"><br/>
+                <div>
+                    <input type="submit" name="submit" class="black_button" value=" Save and Continue"><br />
+                    <div class="sized_box"></div>
+                </div>
 
 
+            </div>
+        </div>
     </div>
-<script rel="script" src="../../js/drawer.js"></script>
+    <script rel="script" src="../../js/drawer.js"></script>
+    <script rel="script" src="../../js/pop_up.js"></script>
+    <script rel="script" src="../../js/upload_box.js"></script>
 </body>
+
 </html>
