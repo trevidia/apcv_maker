@@ -415,6 +415,13 @@ button {
     list-style-type: circle;
 }
 
+[id|="info"] {
+    width: 459px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
 
 /**
 * The Styles below are for the popUps

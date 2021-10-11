@@ -64,11 +64,11 @@
             </div>
             <div style="margin-bottom: 9px">
                 <p>
-                    <label for="journal_name">
-                        Journal name:
+                    <label for="university">
+                        University name:
                     </label>
                 </p>
-                <input type="text" name="journal_name" id="journal_name">
+                <input type="text" name="university" id="university">
             </div>
             <div style="margin-bottom: 9px">
                 <p>
