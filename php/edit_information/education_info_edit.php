@@ -1,121 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>apcv_maker</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/edit_info_nav.css">
 </head>
+
 <body>
-<div id="root">
-    <!-- this is the drawer for the apcv maker site -->
-    <?php
-    include_once "../components/drawer.php";
-    echo drawer($domain, "edit");
-    ?>
-    <?php
-    /* TODO form container for the apcv site
+    <div id="root">
+        <!-- this is the drawer for the apcv maker site -->
+        <?php
+        include_once "../components/drawer.php";
+        echo drawer($domain, "edit");
+        ?>
+        <?php
+        /* TODO form container for the apcv site
      *  write all your code inside the div with id of form-container
      */
-    ?>
-    <div id="form-container">
-        <?php
-        include_once "../../php/components/edit_info_nav.php";
-        echo edit_info_nav('education');
-        /*
+        ?>
+        <div id="form-container">
+            <?php
+            include_once "../../php/components/edit_info_nav.php";
+            echo edit_info_nav('education');
+            /*
         * Todo Make sure to use any style you want for the form labels and input tags
         *  but make sure to save your style in the css directory and make sure not to override
         *  the style.css which is our base style incharge of the fonts and the drawer style
         *  thank you
         */
-       ?>
-       <div class="form">
-        <form action="">
-            <div style>
-            <div>
-                <h1>Education info</h1>
-            </div>
-            <br>
-            <div>
-    
-                <label for="institution" style="padding: 20px">Institution</label>
-<br>
-                <select name="institution" id="institution-label" style="box-sizing:border-box;">
-                    <option value="text">University of Ibadan</option>
-                </select>
-        
-    
-            </div>
-            <div class="education" style="width: max-content; padding: 20px; border-radius: 5px">
-                <label for="year">From:</label>
-                <select name="year" id="" required style="border-radius: 5px">
-                        <option value="text">2005</option>
-                        <option value="text">2006</option>
-                        <option value="text">2007</option>
-                        <option value="text">2008</option>
-                        <option value="text">2009</option>
-                        <option value="text">2010</option>
-                        <option value="text">2011</option>
-                        <option value="text">2012</option>
-                        <option value="text">2013</option>
-                        <option value="text">2014</option>
-                        <option value="text">2015</option>
-                        <option value="text">2016</option>
-                        <option value="text">2017</option>
-                        <option value="text">2018</option>
-                        <option value="text">2019</option>
-                        <option value="text">2020</option>
-                        <option value="text">2021</option>
-                        <option value="text">2022</option>
-                        <option value="text">2023</option>                    
-                        <option value="text">2024</option>                    
-                        <option value="text">2025</option>                    
-                        <option value="text">2026</option>                    
-                        <option value="text">2027</option>
-                        <option value="text">2028</option>
-                        <option value="text">2029</option>                    
-                        <option value="text">2030</option>
-                    </select>
-                    <label for="year">To</label>
-                    <select name="year" id="" required style=" border-radius: 5px">
-                        <option value="text">2005</option>
-                        <option value="text">2006</option>
-                        <option value="text">2007</option>
-                        <option value="text">2008</option>
-                        <option value="text">2009</option>
-                        <option value="text">2010</option>
-                        <option value="text">2011</option>
-                        <option value="text">2012</option>
-                        <option value="text">2013</option>
-                        <option value="text">2014</option>
-                        <option value="text">2015</option>
-                        <option value="text">2016</option>
-                        <option value="text">2017</option>
-                        <option value="text">2018</option>
-                        <option value="text">2019</option>
-                        <option value="text">2020</option>
-                        <option value="text">2021</option>
-                        <option value="text">2022</option>
-                        <option value="text">2023</option>                    
-                        <option value="text">2024</option>                    
-                        <option value="text">2025</option>                    
-                        <option value="text">2026</option>                    
-                        <option value="text">2027</option>
-                        <option value="text">2028</option>
-                        <option value="text">2029</option>                    
-                        <option value="text">2030</option>
-                    </select>
-                </div>
+            ?>
+            <div id="education_edit">
+                <form action="" id="">
+                    <div>
+                        <h1>Education Info</h1>
+                    </div>
+                    <div style="margin-bottom: 9px">
+                        <p>
+                            <label for="university">
+                                University name:
+                            </label>
+                        </p>
+                        <input type="text" name="university" id="university">
+                    </div>
+                    <div style="margin-bottom: 9px">
+                        <p>
+                            <label for="date_accepted">
+                                Start Date:
+                            </label>
+                        </p>
+                        <div id="date_accepted" class="date_accepted">
+                            <select name="day" class="day">
+                                <option value="1">
+                                    1
+                                </option>
+                            </select>
+                            <select name="month" class="month">
+                                <option value="january">
+                                    January
+                                </option>
+                            </select>
 
-
-                <BUtton class="black_button">SAVE CHANGES</BUtton>
+                            <select name="year" class="year">
+                                <option value="2021">
+                                    2021
+                                </option>
+                                <option value="2020">
+                                    2020
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <p>
+                            <label for="date_accepted">
+                                End Date:
+                            </label>
+                        </p>
+                        <div id="date_accepted" class="date_accepted">
+                            <select name="day" class="day">
+                                <option value="1">
+                                    1
+                                </option>
+                            </select>
+                            <select name="month" class="month">
+                                <option value="january">
+                                    January
+                                </option>
+                            </select>
+                            <select name="year" class="year">
+                                <option value="2021">
+                                    2021
+                                </option>
+                                <option value="2020">
+                                    2020
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <input type="submit" name="save_and_continue" value="Save & Continue" class="black_button">
+                </form>
             </div>
-        </form>
         </div>
-    </div>
 
-</div>
-<script rel="script" src="../../js/drawer.js"></script>
-<script rel="script" src="../../js/edit_info_nav_link.js"></script>
+    </div>
+    <script rel="script" src="../../js/drawer.js"></script>
+    <script rel="script" src="../../js/edit_info_nav_link.js"></script>
 </body>
+
 </html>
