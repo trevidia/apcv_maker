@@ -1,0 +1,24 @@
+/**
+* The Styles below are for the mobile
+* ==================================
+* ===========Mobile STYLE===========
+* ==================================
+ */
+
+@media only screen and (max-width: 668px) {
+    .nav_container {
+        display: none;
+    }
+    #image-box {
+        display: none;
+    }
+}
+
+@media only print {
+    .nav_container {
+        display: flex;
+    }
+    #image-box {
+        display: none;
+    }
+}

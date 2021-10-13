@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>apcv_maker</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/edit_info_nav.css">
+    <link rel="stylesheet" href="../../css/mobile_style.css">
 </head>
 
 <body>
@@ -59,7 +61,7 @@
                                     <p>Best Graduating Student 2005</p>
                                     <p>University of Ibadan </p>
                                 </div>
-                                <a href="awards_received_edit.php">
+                                <a href="honors_edit.php">
                                     <div class="edit_button">
                                         <img src="../../static/edit_icon.svg" alt="edit icon">
                                         <p>Edit</p>
@@ -72,7 +74,36 @@
                     <h2>Honours Distinctions and Membership</h2>
                     <h5>of Learned Society</h5></br>
 
-                    <h4>Not Available</h4>
+                    <ul class="info_list">
+                        <li>
+                            <div class="form_info">
+                                <div>
+                                    <p>Best Graduating Student 2005</p>
+                                </div>
+                                <a href="honors_edit.php">
+                                    <div class="edit_button">
+                                        <img src="../../static/edit_icon.svg" alt="edit icon">
+                                        <p>Edit</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+
+                            <div class="form_info">
+                                <div>
+                                    <p>Best Graduating Student 2005</p>
+                                </div>
+                                <a href="awards_received_edit.php">
+                                    <div class="edit_button">
+                                        <img src="../../static/edit_icon.svg" alt="edit icon">
+                                        <p>Edit</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+
                 </div>
 
             </div>
