@@ -25,7 +25,7 @@
                        required>
             </div>
 
-            <h5 class="h5-responsive">Question</h5>
+            <!-- <h5 class="h5-responsive">Question</h5>
             <div class="md-form">
                 <select class="form-control" required>
                     <option>Select question...</option>
@@ -45,7 +45,7 @@
             <h5 class="h5-responsive">Confirm Answer</h5>
             <div class="my-4">
                 <input type="text" id="form1" class="form-control" name="confirm">
-            </div>
+            </div> -->
 
             <div class="text-xs-left">
                 <button class="btn btn-primary" type="submit" name="submit">Submit</button>
