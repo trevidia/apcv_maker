@@ -39,7 +39,7 @@
                     <div>
                         <div>
                             <h1>Scholarships and Prizes</h1>
-                            <h6>Please kindly copy and paste yoiur documents here</h6>
+                            <h3>Please kindly copy and paste your documents here</h3>
                             <br>
                             <label for="awards">Awards or prizes received:</label><br>
                             <input type="text" name="" id="" placeholder="">
@@ -78,8 +78,8 @@
                     </div>
                     <br>
                     <div>
-                        <input type="submit" name="save_and_continue" value="Save & Continue" class="black_button">
                         <input type="submit" name="save_and_continue" value="+ Add More" class="black_button">
+                        <input type="submit" name="save_and_continue" value="Save & Continue" class="black_button">
                     </div>
 
                 </form>
