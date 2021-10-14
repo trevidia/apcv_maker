@@ -34,9 +34,10 @@
                 <div>
                     <h3 style="font-size: 25px; font-weight: 700; line-height: 29.3px;">Distinguish Honours, Distinctions &
                         Membership of Learned Societies</h3>
+                        <h5 style="font-weight: 700; font-size: 12px; line-height: 27.72px;">Please kindly
+                    fill this form</h5>                
                 </div>
-                <h5 style="padding-bottom: 20px; font-weight: 700; font-size: 12px; line-height: 27.72px;">Please kindly
-                    fill this form</h5>
+                
 
                 <div>
                     Distinguish Honours, Distinctions & Membership of Learned Societies:
@@ -73,10 +74,9 @@
 
 
                 <div style="float: left; padding-right: 35.89px;">
-                    <input type="submit" name="submit" value="MORE" class="black_button">
-                </div>
-
-                <input type="submit" name="submit" value="SAVE" class="black_button">
+                        <input type="submit" name="save_and_continue" value="+ Add More" class="black_button">
+                        <input type="submit" name="save_and_continue" value="Save & Continue" class="black_button">
+                    </div>
                 </form>
             </div>
         </div>

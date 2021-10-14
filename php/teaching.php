@@ -49,8 +49,7 @@
                 </div>
                 <br />
                 <div> Work Experience <br />
-                    <br />
-                    <input style="width:550px; height:200px;" />
+                <textarea id="authors" name="authors" required></textarea>
                 </div>
                 <br />
                 <div>Date optional<br />
@@ -130,12 +129,10 @@
                     </select>
                 </div>
                 <br />
-                <button style="width:150px; height:30px; padding-right: 5px">
-                    <h3>MORE</h3>
-                </button>
-                <button style="width:150px; height:30px; padding-left: 5px;">
-                    <h3>SAVE</h3>
-                </button>
+                <div>
+                        <input type="submit" name="save_and_continue" value="+ Add More" class="black_button">
+                        <input type="submit" name="save_and_continue" value="Save & Continue" class="black_button">
+                    </div>
             </div>
         </div>
     </div>

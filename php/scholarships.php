@@ -39,7 +39,7 @@
                     <div>
                         <div>
                             <h1>Scholarships and Prizes</h1>
-                            <h3>Please kindly copy and paste your documents here</h3>
+                            <h4>Please kindly copy and paste your documents here</h4>
                             <br>
                             <label for="awards">Awards or prizes received:</label><br>
                             <input type="text" name="" id="" placeholder="">
@@ -72,7 +72,7 @@
                             </div>
                             <br>
                             <label for="awards">Awarding Institute:</label><br>
-                            <input type="text" name="institute" id="" placeholder="University of ibadan">
+                            <input type="text" name="institute" id="" placeholder="University of Ibadan">
 
                         </div>
                     </div>
