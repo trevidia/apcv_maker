@@ -25,11 +25,11 @@
             <div>
                 <p>
                     <label for="dropdown_pop">
-                        State:
+                        Status:
                     </label>
                 </p>
-                <select id="dropdown_pop" name="state">
-                    <option value="International" selected> International</option>
+                <select id="dropdown_pop" name="status">
+                    <option value="Institution" selected> Institution</option>
                     <option value="Bodies"> Bodies</option>
                 </select>
             </div>
@@ -62,7 +62,7 @@
                 <h1>
                     University Education
                 </h1>
-                <input type="button" value="+ Add new institute" class="black_button" id="new_popup">
+                <input type="button" value="+ Add New Institute" class="black_button" id="new_popup">
             </div>
             <div style="margin-bottom: 9px">
                 <p>

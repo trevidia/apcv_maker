@@ -49,8 +49,7 @@
                 </div>
                 <br />
                 <div> Work Experience <br />
-                    <br />
-                    <input style="width:550px; height:200px;" />
+                <textarea id="authors" name="authors" required></textarea>
                 </div>
                 <br />
                 <div>Date optional<br />

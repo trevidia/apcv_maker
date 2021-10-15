@@ -126,8 +126,8 @@
                 </div>
 
                 <div style="padding-top: 35px;">
-                    <input type="submit" name="save" value="SAVE" class="black_button">
-                    <input type="submit" name="add_qualifications" value="+ Add More" class="black_button">
+                        <input type="submit" name="save_and_continue" value="+ Add More" class="black_button">
+                        <input type="submit" name="save_and_continue" value="Save & Continue" class="black_button">
                 </div>
 
 
