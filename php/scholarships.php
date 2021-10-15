@@ -69,6 +69,10 @@
                                         2020
                                     </option>
                                 </select>
+                                <br><br>s
+                                <label for="date_accepted">
+                                    Ending date:
+                                </label>
                             </div>
                             <br>
                             <label for="awards">Awarding Institute:</label><br>
