@@ -82,11 +82,7 @@
                         <option> 24 </option>
                         <option> 25 </option>
                         <option> 26 </option>
-                        <option> 27 </option>
-                        <option> 28 </option>
-                        <option> 29 </option>
-                        <option> 30 </option>
-                        <option> 31 </option>
+                        
                     </select>
                     <select style="width:100px; height:30px;">
                         <option> Month </option>
