@@ -130,11 +130,12 @@
                 </div>
                 <br />
                 <button style="width:150px; height:30px; padding-right: 5px">
-                    <h3>+ ADD MORE Dara</h3>
+                    <h3>+ Add More</h3>
                 </button>
                 <button style="width:150px; height:30px; padding-left: 5px;">
-                    <h3>SAVE</h3>
+                    <h3>Save & Continue</h3>
                 </button>
+        
             </div>
         </div>
     </div>
