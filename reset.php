@@ -12,8 +12,8 @@
 
     <!--Naked Form-->
     <div class="card-body">
-        <h2 class="h2-responsive"><strong>Security Questions</strong></h2>
-        <p class="pb-4">Please fill out the question correctly</p>
+        <h2 class="h2-responsive"><strong>Email Validation</strong></h2>
+        <p class="pb-4">Please enter your email address</p>
 
         <!--Body-->
         <form action="" method="post">
