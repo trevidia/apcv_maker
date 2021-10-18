@@ -88,12 +88,11 @@
                         <input type="submit" name="save_and_continue" id="add_more" value="+ Add More" class="black_button">
                         <input type="submit" name="save_and_continue" value="Save & Continue" class="black_button">
                 </div>
-        </div>
     </div>
-        <script rel="script" src="../js/add_more.js"></script>
-        <script rel="script" src="../js/drawer.js"></script>
+</div>
+<script rel="script" src="../js/add_more.js"></script>
+<script rel="script" src="../js/drawer.js"></script>
 </body>
-
 </html>
 
 <!--
