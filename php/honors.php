@@ -47,40 +47,16 @@
                         </div>
 
                         <div class="date">
-                            <label>Date:</label> <span style="color: #d8a4b1;">optional</span><br />
+                            <label>Date:</label> <span style="color: #d8a4b1;">(optional)</span><br />
                         </div>
 
-                        <div style="padding-bottom: 40px;">
-                            <select style="width: 155.06px; height: 32px; border-radius: 5px; font-weight: 400; font-size: 20px; padding-left: 10px;">
-                                <option>Day</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
+                        <div id="date" class="date">
+                        <label>
+                        <input type="date" name="date">
+                        </label>
+                    </div>
 
-                            <select style="width: 155.06px; height: 32px; border-radius: 5px; font-weight: 400; font-size: 20px; padding-left: 10px;">
-                                <option>Month</option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-
-                                
-                            
-
-                            </select>
-
-                            <select style="width: 155.06px; height: 32px; border-radius: 5px; font-weight: 400; font-size: 20px; padding-left: 10px;">
-                                <option>Year</option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                            </select>
-                        </div>
+                        
                     </div>
                 </div>
 
