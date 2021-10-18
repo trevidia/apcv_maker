@@ -46,7 +46,7 @@
                 </div>
 
                 <div class="button_bar">
-                    <input type="button" value="+ Add More" class="black_button">
+                    <input type="button" id="add_more" value="+ Add More" class="black_button">
                     <input type="submit" value="Save" class="black_button">
                 </div>
             </section>
