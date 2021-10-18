@@ -46,7 +46,7 @@
                             <div>
                                 <br>
                                 <label for="date_accepted">
-                                    Granting date
+                                    Starting date:
                                 </label>
                             </div>
                             <div id="date_accepted" class="date_accepted">
