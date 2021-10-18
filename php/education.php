@@ -75,10 +75,10 @@
             <div style="margin-bottom: 9px">
                 <p>
                     <label for="date_accepted">
-                        Start Date:
+                        Starting Date:
                     </label>
-                </p>
-                <div id="date_accepted" class="date_accepted">
+                </p>-date
+                <div id="Starting_date" class="Starting_date">
                         <label>
                         <input type="date" name="date">
                         </label>

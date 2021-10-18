@@ -96,34 +96,13 @@
                                 <label for="granting_date">
                                     Granting Date:
                                 </label>
+                        <div id="granting_date" class="granting_date">
+                            <label>
+                            <input type="date" name="date">
+                            </label>
+                    </div>
                             </p>
-                            <div id="granting_date" class="granting_date">
-                                <select name="day" class="day">
-                                    <option value="01">
-                                        01
-                                    </option>
-                                </select>
-                                <select name="month" class="month">
-                                    <option value="june">
-                                        June
-                                    </option>
-                                </select>
-
-                                <select name="year" class="year">
-                                    <option value="2021">
-                                        2021
-                                    </option>
-                                    <option value="2020">
-                                        2020
-                                    </option>
-                                    <option value="2019">
-                                        2019
-                                    </option>
-                                    <option value="2018">
-                                        2018
-                                    </option>
-                                </select>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
