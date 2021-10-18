@@ -35,54 +35,59 @@
         */
             ?>
             <div class="form">
-                <form action="">
+                <!-- <form action=""> -->
                     <div>
                         <div>
                             <h1>Scholarships and Prizes</h1>
                             <h4>Please kindly copy and paste your documents here</h4>
                             <br>
-                            <label for="awards">Awards or prizes received:</label><br>
-                            <input type="text" name="" id="" placeholder="">
-                            <div>
-                                <br>
-                                <label for="date_accepted">
-                                    Starting date:
-                                </label>
-                            </div>
-                            <div id="date_accepted" class="date_accepted">
-                                <select name="day" class="day">
-                                    <option value="1">
-                                        1
-                                    </option>
-                                </select>
-                                <select name="month" class="month">
-                                    <option value="january">
-                                        January
-                                    </option>
-                                </select>
+                        </div>
+                            <div id="forms">
+                                <div class="form-1">
+                                        <label for="awards">Awards or prizes received:</label><br>
+                                    <input type="text" name="" id="" placeholder="">
+                                    <div>
+                                        <br>
+                                        <label for="date_accepted">
+                                            Starting date:
+                                        </label>
+                                    </div>
+                                    <div id="date_accepted" class="date_accepted">
+                                        <select name="day" class="day">
+                                            <option value="1">
+                                                1
+                                            </option>
+                                        </select>
+                                        <select name="month" class="month">
+                                            <option value="january">
+                                                January
+                                            </option>
+                                        </select>
 
-                                <select name="year" class="year">
-                                    <option value="2021">
-                                        2021
-                                    </option>
-                                    <option value="2020">
-                                        2020
-                                    </option>
-                                </select>
+                                        <select name="year" class="year">
+                                            <option value="2021">
+                                                2021
+                                            </option>
+                                            <option value="2020">
+                                                2020
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <br>
+                                    <label for="awards">Awarding Institute:</label><br>
+                                    <input type="text" name="institute" id="" placeholder="University of Ibadan">
+                                </div>
                             </div>
-                            <br>
-                            <label for="awards">Awarding Institute:</label><br>
-                            <input type="text" name="institute" id="" placeholder="University of Ibadan">
 
                         </div>
                     </div>
                     <br>
                     <div>
-                        <input type="submit" name="save_and_continue" value="+ Add More" class="black_button">
+                        <input type="submit" name="save_and_continue" id="add_more" value="+ Add More" class="black_button">
                         <input type="submit" name="save_and_continue" value="Save & Continue" class="black_button">
                     </div>
 
-                </form>
+                <!-- </form> -->
             </div>
         </div>
     </div>
