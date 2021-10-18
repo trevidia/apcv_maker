@@ -27,31 +27,36 @@
         *  thank you
         */
         ?>
-        <form method="post" action="">
+        <!-- <form method="post" action=""> -->
             <section class="research_completed_form">
                 <h1>
                     Details About Completed Work
                 </h1>
-                <div>
-                    <p>
-                        <label for="research_title">
-                            Research Title:
-                        </label>
-                    </p>
-                    <input type="text" name="research_title" id="research_title" placeholder="submit">
+                <div id="forms">
+                    <div class="form-1">
+                        <div>
+                            <p>
+                                <label for="research_title">
+                                    Research Title:
+                                </label>
+                            </p>
+                            <input type="text" name="research_title" id="research_title" placeholder="submit">
+                        </div>
+                    </div>
                 </div>
 
                 <div class="button_bar">
-                    <input type="button" value="More" class="black_button">
+                    <input type="button" value="+ Add More" class="black_button">
                     <input type="submit" value="Save" class="black_button">
                 </div>
             </section>
-        </form>
+        <!-- </form> -->
 
 
     </div>
 
 </div>
+<script rel="script" src="../../js/add_more.js"></script>
 <script rel="script" src="../../js/drawer.js"></script>
 </body>
 </html>

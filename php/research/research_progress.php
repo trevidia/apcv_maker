@@ -32,25 +32,29 @@
                 <h1>
                     Brief Details about the Research Work in Progress
                 </h1>
-                <div>
-                    <p>
-                        <label for="research_title">
-                            Research Title:
-                        </label>
-                    </p>
-                    <input type="text" name="research_title" id="research_title" placeholder="submit">
-                </div>
-                <div>
-                    <p>
-                        <label for="details">
-                            Details about research work done:
-                        </label>
-                    </p>
-                    <textarea name="details" id="details"></textarea>
+                <div id="forms">
+                    <div class="form-1">
+                        <div>
+                            <p>
+                                <label for="research_title">
+                                    Research Title:
+                                </label>
+                            </p>
+                            <input type="text" name="research_title" id="research_title" placeholder="submit">
+                        </div>
+                        <div>
+                            <p>
+                                <label for="details">
+                                    Details about research work done:
+                                </label>
+                            </p>
+                            <textarea name="details" id="details"></textarea>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="button_bar">
-                    <input type="button" value="More" class="black_button">
+                    <input type="button" id="add_more" value="+ Add More" class="black_button">
                     <input type="submit" value="Save" class="black_button">
                 </div>
             </section>
@@ -60,6 +64,7 @@
     </div>
 
 </div>
+<script rel="script" src="../../js/add_more.js"></script>
 <script rel="script" src="../../js/drawer.js"></script>
 </body>
 </html>
