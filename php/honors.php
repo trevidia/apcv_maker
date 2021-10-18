@@ -37,10 +37,9 @@
                         <h5 style="font-weight: 700; font-size: 12px; line-height: 27.72px;">Please kindly
                     fill this form</h5>                
                 </div>
+                
 
-                <div id="forms">
-                    <div class="form-1">
-                    <div>
+                <div>
                     Distinguish Honours, Distinctions & Membership of Learned Societies:
                 </div>
                 <div><input type="text" name="best" placeholder="Best Graduating Student">
@@ -84,18 +83,12 @@
 
 
                 <div style="float: left; padding-right: 35.89px;">
-                        <input type="submit" name="save_and_continue"  id="add_more" value="+ Add More" class="black_button">
+                        <input type="submit" name="save_and_continue" value="+ Add More" class="black_button">
                         <input type="submit" name="save_and_continue" value="Save & Continue" class="black_button">
                     </div>
                 </form>
             </div>
         </div>
-                    </div>
-                </div>
-                
-
-                
-        <script rel="script" src="../js/add_more.js"></script>
         <script rel="script" src="../js/drawer.js"></script>
 </body>
 
