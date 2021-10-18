@@ -79,26 +79,10 @@
                     </label>
                 </p>
                 <div id="date_accepted" class="date_accepted">
-                    <select name="day" class="day">
-                        <option value="1">
-                            1
-                        </option>
-                    </select>
-                    <select name="month" class="month">
-                        <option value="january">
-                            January
-                        </option>
-                    </select>
-
-                    <select name="year" class="year">
-                        <option value="2021">
-                            2021
-                        </option>
-                        <option value="2020">
-                            2020
-                        </option>
-                    </select>
-                </div>
+                        <label>
+                        <input type="date" name="date">
+                        </label>
+                    </div>
             </div>
             <div>
                 <p>
@@ -107,26 +91,10 @@
                     </label>
                 </p>
                 <div id="date_accepted" class="date_accepted">
-                    <select name="day" class="day">
-                        <option value="1">
-                            1
-                        </option>
-                    </select>
-                    <select name="month" class="month">
-                        <option value="january">
-                            January
-                        </option>
-                    </select>
-                    <select name="year" class="year">
-                        <option value="2021">
-                            2021
-                        </option>
-                        <option value="2020">
-                            2020
-                        </option>
-                    </select>
-                </div>
-            </div>
+                        <label>
+                        <input type="date" name="date">
+                        </label>
+                    </div>
             <div class="sized_box"></div>
             <input type="submit" name="save_and_continue" value="Save & Continue" class="black_button">
 
