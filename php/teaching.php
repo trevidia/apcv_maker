@@ -61,6 +61,8 @@
                         <div id="date" class="date">
                             <label>
                             <input type="date" name="date">
+
+                            
                             </label>
                
                 <div>
