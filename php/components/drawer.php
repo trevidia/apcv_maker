@@ -111,10 +111,10 @@ function drawer($domainDirectory, $navButton)
         </a>
     </li>
     <li class=\"nav_box $publicationsTab \"  id='publication_nav'>
-    <a class=" . $publicationsTab . " href=" . $domainDirectory . "publications/articles_accepted_publication.php>
+    <a class=" . $publicationsTab . " href=" . $domainDirectory . "pub/articles_accepted_publication.php>
          Publications
          </a>
-          $pubDrawer
+          
     </li>
    
     <li class=\"nav_box research_nav $researchTab\" id='research_nav'>
