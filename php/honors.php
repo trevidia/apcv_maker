@@ -47,6 +47,11 @@
 
                 <div class="date">
                     <label>Date:</label> <span style="color: #d8a4b1;">optional</span><br />
+                    <div id="date_accepted" class="date_accepted">
+                        <label>
+                        <input type="date" name="date">
+                        </label>
+                    </div>
                 </div>
 
                 <div style="padding-bottom: 40px;">

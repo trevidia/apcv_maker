@@ -35,14 +35,17 @@
         */
             ?>
             <div class="form">
-                <form action="">
                     <div>
                         <div>
                             <h1>Scholarships and Prizes</h1>
                             <h4>Please kindly copy and paste your documents here</h4>
                             <br>
-                            <label for="awards">Awards or prizes received:</label><br>
+                            <div id="forms">
+                                <div class="form-1">
+                                    <div style= "padding-top: 32px;">
+                                <label for="awards">Awards or prizes received:</label><br>
                             <input type="text" name="" id="" placeholder="">
+                                </div>
                             <div>
                                 <br>
                                 <label for="date_accepted">
@@ -76,16 +79,17 @@
 
                         </div>
                     </div>
-                    <br>
+                   
+    </div>
+    </div>
                     <div>
-                        <input type="submit" name="save_and_continue" value="+ Add More" class="black_button">
+                        <input type="submit" name="save_and_continue" id="add_more" value="+ Add More" class="black_button">
                         <input type="submit" name="save_and_continue" value="Save & Continue" class="black_button">
                     </div>
 
-                </form>
             </div>
         </div>
-    </div>
+    <script rel="script" src="../js/add_more.js"></script>
     <script rel="script" src="../js/drawer.js"></script>
 </body>
 
