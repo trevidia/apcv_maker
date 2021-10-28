@@ -539,3 +539,8 @@ button {
 .best_pub_container {
     height: 800px;
 }
+
+
+.mobile_drawer{
+    display: none;
+}

@@ -46,6 +46,9 @@
      *  write all your code inside the div with id of form-container
      */
     ?>
+    <?php
+    include_once "components/mobile_drawer.php";
+    ?>
     <div id="form-container">
         <?php
         /*

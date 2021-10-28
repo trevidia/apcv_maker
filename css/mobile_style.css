@@ -12,6 +12,45 @@
     #image-box {
         display: none;
     }
+    #edit_nav_container {
+        margin-bottom: 9px;
+        width: 100%;
+    }
+    #form-container {
+        padding: 0;
+        width: 100vw;
+        object-fit: cover;
+    }
+    input,
+    input[type="text"],
+    .upload_box,
+    select,
+    textarea {
+        width: 100vw;
+    }
+    .date_accepted {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #root {
+        /* margin: 9px; */
+        display: block;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    body{
+        overflow: hidden;
+    }
+    .mobile_drawer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        background-color: #EDD4D4;
+    }
+    .mobile_drawer ul{
+        display: none;
+    }
 }
 
 @media only print {

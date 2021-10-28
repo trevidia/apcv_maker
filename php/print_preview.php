@@ -211,8 +211,7 @@
                             <div>
                                 <h1 style="float: left; padding-right: 38px; font-size: 24px; font-weight: 400; width: 10px;">X</h1>
                             </div>
-                            <div style="padding-bottom: 15px; font-weight: 500; font-size: 24px; line-height: 31px; text-decoration: underline solid black 2px; color: #000000;
-">
+                            <div style="padding-bottom: 15px; font-weight: 500; font-size: 24px; line-height: 31px; text-decoration: underline solid black 2px; color: #000000;">
                                 <h1>Publications</h1>
                             </div>
                             <div style="padding-left: 38px; line-height: 23px; padding-right: 267.234px;">
@@ -260,8 +259,7 @@
                             <div>
                                 <h1 style="float: left; padding-right: 38px; font-size: 24px; font-weight: 400; width: 10px;">XI</h1>
                             </div>
-                            <div style="padding-bottom: 15px; font-weight: 500; font-size: 24px; line-height: 31px; text-decoration: underline solid black 2px; color: #000000;
-">
+                            <div style="padding-bottom: 15px; font-weight: 500; font-size: 24px; line-height: 31px; text-decoration: underline solid black 2px; color: #000000;">
                                 <h1>Major Conferences Attended with Papers Read (in the last 5 years): Nil</h1>
                             </div>
                             <div style="padding-left: 38px; line-height: 23px; float: left; padding-right: 267.234px;">
@@ -274,8 +272,7 @@
                                 <div>
                                     <h1 style="float: left; padding-right: 38px; font-size: 24px; font-weight: 400; width: 10px;">XII</h1>
                                 </div>
-                                <div style="padding-bottom: 15px; font-weight: 500; font-size: 24px; line-height: 31px; text-decoration: underline solid black 2px; color: #000000;
-">
+                                <div style="padding-bottom: 15px; font-weight: 500; font-size: 24px; line-height: 31px; text-decoration: underline solid black 2px; color: #000000;">
                                     <h1>Ten Best Publications that Reflect the Totality of my Contributions to Scholarship:</h1>
                                 </div>
                                 <div style="padding-left: 38px; line-height: 23px; padding-right: 267.234px;">
