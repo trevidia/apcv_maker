@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>apcv_maker</title>
+    <link rel="stylesheet" href="../../css/pub_nav.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/mobile_style.css">
+    <style>
+        ::placeholder{color: #D8A4B1;}
+    </style>
 </head>
 <body>
 
@@ -42,7 +46,7 @@
     <!-- this is the drawer for the apcv maker site -->
     <?php
     include_once "../components/drawer.php";
-    echo drawer($domain, ["publications", 'articlesAcceptedPub']);
+    echo drawer($domain, ["publications", 'patents']);
     ?>
     <?php
     /* TODO form container for the apcv site
@@ -50,6 +54,17 @@
      */
     ?>
     <div id="form-container">
+    <?php
+        include_once "../../php/components/pub_nav.php";
+        echo pub_nav('changePass');
+        /*
+        * Todo Make sure to use any style you want for the form labels and input tags
+        *  but make sure to save your style in the css directory and make sure not to override
+        *  the style.css which is our base style incharge of the fonts and the drawer style
+        *  thank you
+        */
+
+        ?>
         <?php
         /*
         * Todo Make sure to use any style you want for the form labels and input tags
@@ -59,23 +74,27 @@
         */
         ?>
         <div class="form">
+            <!-- This is the content in Patent -->
             <form>
                 <div>
-                    <h1> Articles already accepted for publication</h1>
-                    <input type="button" value="+ Add new Journal" class="black_button" id="new_popup">
+                    <h1>Patents</h1> 
+                    <h5>Please Kindly fill in your Publications.</h5>
                 </div>
-                <div>
+                <div style="padding-top: 18px;">
+                    <input type="button" value="+ Add New Journal" class="black_button" id="new_popup">
+                </div>
+                <div style="padding-top: 27px;">
                     <p>
                         <label for="pub_title">
                             Publication title:
                         </label>
                     </p>
-                    <input type="text" name="pub_title" id="pub_title" placeholder="Phylogenetics">
+                    <input type="text" name="pub_title" id="pub_title">
                 </div>
                 <div class="upload_box" id="uploader">
                     <p>
                         <label for="upload_button">
-                            Drop Acceptance letter here to start uploading
+                            Drop Patents Report here to start uploading
                         </label>
                     </p>
                     <input type="file" value="SELECT FILE" id="select_file" class="black_button" hidden>
@@ -90,9 +109,9 @@
                         </label>
                     </p>
                     <p style="font-size: 10px">
-                        please input contribution in percentage 20, 30, 50
+                        Please input contribution in percentage e.g 20, 50
                     </p>
-                    <input type="text" name="percent_contribution" id="percent_contribution" placeholder="30">
+                    <input type="text" name="percent_contribution" id="percent_contribution" placeholder="20%">
                 </div>
                 <div>
                     <p>
@@ -104,34 +123,50 @@
                 </div>
                 <div>
                     <p>
-                        <label for="journals">
-                            List of Journals:
+                        <label for="countries">
+                            Country:
                         </label>
                     </p>
-                    <select id="journals" name="journals">
-                        <option value="1"> Nauru</option>
-                        <option value="2"> meat</option>
+                    <select id="countries" name="countries">
+                        <option value="1">Nigeria</option>
+                        <option value="2">Ghana</option>
                     </select>
                 </div>
                 <div>
                     <p>
-                        <label for="date_accepted">
-                            Date Accepted
+                        <label for="patent's_number">
+                            Patent's Number:
                         </label>
                     </p>
-                    <div id="date_accepted" class="date_accepted">
+                    <input type="text" name="patent's_number" id="patent's_number">
+                </div>
+                <div>
+                    <p>
+                        <label for="patent's_date">
+                            Patent's Date:
+                        </label>
+                    </p>
+                    <div id="patent's_date" class="patent's_date">
                         <select name="day" class="day">
-                            <option value="1">
-                                1
+                            <option value="day">
+                                Day
+                            </option>
+                            <option value="01">
+                                01
                             </option>
                         </select>
                         <select name="month" class="month">
+                            <option value="month">
+                                Month
+                            </option>
                             <option value="january">
                                 January
                             </option>
                         </select>
-
                         <select name="year" class="year">
+                            <option value="year">
+                                Year
+                            </option>
                             <option value="2021">
                                 2021
                             </option>
@@ -141,15 +176,13 @@
                         </select>
                     </div>
                 </div>
-                <input type="submit" name="save_and_continue" value="Save & Continue" class="black_button">
+                <input type="submit" name="save and continue" value="Save & Continue" class="black_button">
 
             </form>
         </div>
-    </div>
-</div>
-
-<script rel="script" src="../../js/drawer.js"></script>
-<script rel="script" src="../../js/upload_box.js"></script>
-<script rel="script" src="../../js/pop_up.js"></script>
-</body>
-</html>
+        <script rel="script" src="../../js/pub_nav_links.js"></script>
+        <script rel="script" src="../../js/drawer.js"></script>
+        <script rel="script" src="../../js/upload_box.js"></script>
+        <script rel="script" src="../../js/pop_up.js"></script>
+    </body>
+    </html>
