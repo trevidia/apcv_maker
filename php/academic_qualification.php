@@ -59,83 +59,68 @@
         */
         ?>
         <div class="form">
-            <form>
                 <div>
                     <h1> Academic Qualifications (With Dates and Grantings)</h1>
                     <p>Please kindly fill the institutions attended. (Added new Qualification)</p></br>
                     <input type="button" value="+ Add New Qualification" class="black_button" id="new_popup" >
                 
-                </div>    
-                <div style="padding-top: 32px;">
-                    <p>
-                        <label for="qualifications">
-                            Qualification:
-                        </label>
-                    </p>
-                    <select id="qualifications" name="qualifications">
-                        <option value="1"> Select...</option>
-                        <option value="2"> </option>
-                        <option value="3"> </option>
-                        <option value="4"> </option>
-                    </select>
                 </div>
-                <div style="padding-top: 22px;">
-                    <p>
-                        <label for="awarding_institution">
-                            Awarding Institution:
-                        </label>
-                    </p>
-                    <select id="awarding_institutions" name="awarding_institutions">
-                        <option value="1"> University of Ibadan</option>
-                        <option value="2"> </option>
-                        <option value="3"> </option>
-                        <option value="4"> </option>
-                    </select>
-                </div>
+                <div id="forms">
+                    <div class="form-1">
+                        <div style="padding-top: 32px;">
+                            <p>
+                                <label for="qualifications">
+                                    Qualification:
+                                </label>
+                            </p>
+                            <select id="qualifications" name="qualifications">
+                                <option value="1"> Select...</option>
+                                <option value="2"> </option>
+                                <option value="3"> </option>
+                                <option value="4"> </option>
+                            </select>
+                        </div>
+                        <div style="padding-top: 22px;">
+                            <p>
+                                <label for="awarding_institution">
+                                    Awarding Institution:
+                                </label>
+                            </p>
+                            <select id="awarding_institutions" name="awarding_institutions">
+                                <option value="1"> University of Ibadan</option>
+                                <option value="2"> </option>
+                                <option value="3"> </option>
+                                <option value="4"> </option>
+                            </select>
+                        </div>
 
-                <div style="padding-top: 19px;">
-                    <p>
-                        <label for="granting_date">
-                            Granting Date:
-                        </label>
-                    </p>
-                    <div id="granting_date" class="granting_date">
-                        <select name="day" class="day">
-                            <option value="01">
-                                01
-                            </option>
-                        </select>
-                        <select name="month" class="month">
-                            <option value="june">
-                                June
-                            </option>
-                        </select>
-
-                        <select name="year" class="year">
-                            <option value="2021">
-                                2021
-                            </option>
-                            <option value="2020">
-                                2020
-                            </option>
-                            <option value="2019">
-                                2019
-                            </option>
-                            <option value="2018">
-                                2018
-                            </option>
-                        </select>
+                        <div style="padding-top: 19px;">
+                            <p>
+                                <label for="granting_date">
+                                    Granting Date:
+                                </label>
+                            </p>
+                        <div id="Granting_date" class="Granting_date">
+                            <label>
+                            <input type="date" name="date">
+                            </label>
+                        </div>
+                           
+                        </div>
                     </div>
                 </div>
 
+                
+
                 <div style="padding-top: 35px;">
-                    <input type="submit" name="save" value="SAVE" class="black_button">
-                    <input type="submit" name="add_qualifications" value="+ Add More" class="black_button">
+                        <input type="submit" name="save_and_continue" id="add_more" value="+ Add More" class="black_button">
+                        <input type="submit" name="save_and_continue" value="Save & Continue" class="black_button">
                 </div>
 
 
     </div>
 </div>
+<script rel="script" src="../js/add_more.js"></script>
 <script rel="script" src="../js/pop_up.js"></script>
 <script rel="script" src="../js/drawer.js"></script>
 </body>

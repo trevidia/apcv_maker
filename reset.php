@@ -12,8 +12,8 @@
 
     <!--Naked Form-->
     <div class="card-body">
-        <h2 class="h2-responsive"><strong>Security Questions</strong></h2>
-        <p class="pb-4">Please fill out the question correctly</p>
+        <h2 class="h2-responsive"><strong>Email Validation</strong></h2>
+        <p class="pb-4">Please enter your email address</p>
 
         <!--Body-->
         <form action="" method="post">
@@ -25,7 +25,7 @@
                        required>
             </div>
 
-            <h5 class="h5-responsive">Question</h5>
+            <!-- <h5 class="h5-responsive">Question</h5>
             <div class="md-form">
                 <select class="form-control" required>
                     <option>Select question...</option>
@@ -45,7 +45,7 @@
             <h5 class="h5-responsive">Confirm Answer</h5>
             <div class="my-4">
                 <input type="text" id="form1" class="form-control" name="confirm">
-            </div>
+            </div> -->
 
             <div class="text-xs-left">
                 <button class="btn btn-primary" type="submit" name="submit">Submit</button>

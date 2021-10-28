@@ -30,59 +30,48 @@
         *  thank you
         */
             ?>
-            <form action="">
             <div class="form">
                 
                 <div>
                     <h3 style="font-size: 25px; font-weight: 700; line-height: 29.3px;">Distinguish Honours, Distinctions &
                         Membership of Learned Societies</h3>
+                        <h5 style="font-weight: 700; font-size: 12px; line-height: 27.72px;">Please kindly
+                    fill this form</h5>                
                 </div>
-                <h5 style="padding-bottom: 20px; font-weight: 700; font-size: 12px; line-height: 27.72px;">Please kindly
-                    fill this form</h5>
+                
 
-                <div>
-                    Distinguish Honours, Distinctions & Membership of Learned Societies:
-                </div>
-                <div><input type="text" name="best" placeholder="Best Graduating Student">
-                </div>
+                <div id="forms">
+                    <div class="form-1">
+                            <div>
+                            Distinguish Honours, Distinctions & Membership of Learned Societies:
+                        </div>
+                        <div><input type="text" name="best" placeholder="Best Graduating Student">
+                        </div>
 
-                <div class="date">
-                    <label>Date:</label> <span style="color: #d8a4b1;">optional</span><br />
-                </div>
+                        <div class="date">
+                            <label>Date:</label> <span style="color: #d8a4b1;">(optional)</span><br />
+                        </div>
 
-                <div style="padding-bottom: 40px;">
-                    <select style="width: 155.06px; height: 32px; border-radius: 5px; font-weight: 400; font-size: 20px; padding-left: 10px;">
-                        <option>Day</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
+                        <div id="date" class="date">
+                        <label>
+                        <input type="date" name="date">
+                        </label>
+                    </div>
 
-                    <select style="width: 155.06px; height: 32px; border-radius: 5px; font-weight: 400; font-size: 20px; padding-left: 10px;">
-                        <option>Month</option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                    </select>
-
-                    <select style="width: 155.06px; height: 32px; border-radius: 5px; font-weight: 400; font-size: 20px; padding-left: 10px;">
-                        <option>Year</option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                    </select>
+                        
+                    </div>
                 </div>
 
 
                 <div style="float: left; padding-right: 35.89px;">
-                    <input type="submit" name="submit" value="MORE" class="black_button">
-                </div>
-
-                <input type="submit" name="submit" value="SAVE" class="black_button">
-                </form>
+                        <input type="submit" name="save_and_continue" id="add_more" value="+ Add More" class="black_button">
+                        <input type="submit" name="save_and_continue" value="Save & Continue" class="black_button">
+                    </div>
             </div>
         </div>
-        <script rel="script" src="../js/drawer.js"></script>
+
+<script rel="script" src="../js/add_more.js"></script>        
+<script rel="script" src="../js/drawer.js"></script>
 </body>
 
 </html>
